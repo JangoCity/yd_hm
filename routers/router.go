@@ -13,16 +13,15 @@ var FilterUser = func(ctx *context.Context) {
 	//用户在线id
 	uid,ok := ctx.GetSecureCookie(beego.AppConfig.String("secertkey"),"uid")
 	fmt.Println("用户id---->"+uid)
-	if !ok {//&& ctx.Request.RequestURI != "/login/login" {
+	//请求路由
+	url := ctx.Input.URL()
+	if !ok && url != "/login/login"{//&& ctx.Request.RequestURI != "/login/login" {
 		ctx.Redirect(302, "/login/login")	//重定向返回json{status:0}
-	}else if ctx.Request.RequestURI != ("/permission/getpermissionbyid") {
+	}else if url != "/permission/getpermissionbyid" && url != "/login/login"{
 		//用户路由权限判断
-		url := ctx.Input.URL()
 		//fmt.Println(ctx.Input.URL())	//uri可以获得路由后面的参数,url则不包含
 		apilist,_ := ctx.GetSecureCookie(beego.AppConfig.String("secertkey"),"apipermissionbyid")
 		//fmt.Println(apilist)
-		//var p []*models.Permission
-		//json.Unmarshal([]byte(apilist),&p)
 		b := strings.Contains(apilist,url) //路由权限判断
 		if b {
 			fmt.Println("uid---->"+uid+"====>"+url+"路由权限通过")
@@ -41,4 +40,6 @@ func init() {
 	beego.AutoRouter(&controllers.RoleController{})
 	beego.AutoRouter(&controllers.ApiController{})
 	beego.AutoRouter(&controllers.PermissionController{})
+	beego.AutoRouter(&controllers.NewsController{})
+	beego.AutoRouter(&controllers.FileController{})
 }
