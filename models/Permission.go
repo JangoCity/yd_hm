@@ -46,6 +46,35 @@ func GetPermissionById(uid string) []*Permission{
 	return u
 }
 
+//返回所有用户以及角色
+func GetAllUserToRole() []*Permission{
+	o := orm.NewOrm()
+	o.Using("default")
+
+	var u []*Permission
+
+	_,err := o.Raw("select * from `jmuser`").QueryRows(&u)
+	if err == nil {
+		fmt.Println("用户的一组权限查询成功")
+	}
+
+	var maps []orm.Params
+	for i := 0; i < len(u); i++{
+		//查询用户对应的角色
+		num, err := o.Raw("SELECT role_id FROM `permission` WHERE jmuser_id = ?",u[i].Id).Values(&maps)
+		if err == nil && num > 0 {
+			for j := 0; j < int(num); j++{
+				role_id := maps[j]["role_id"]
+				roleapi:= GetApiByRoleId(role_id.(string))
+				//u[i].permissionlist[j] = roleapi[0] //直接赋值错误,显示下标越界
+				//数组/切片赋值方式,append(),必须要有返回值！！！
+				u[i].Permissionlist = append(u[i].Permissionlist,roleapi[0])
+			}
+		}
+	}
+	return u
+}
+
 //用户角色的添加
 func CreateUserToRole(jmuser_id,role_id string) int{
 	o := orm.NewOrm()

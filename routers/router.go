@@ -33,7 +33,7 @@ var FilterUser = func(ctx *context.Context) {
 }
 
 func init() {
-	//beego.InsertFilter("/*",beego.BeforeRouter,FilterUser)
+	beego.InsertFilter("/*",beego.BeforeRouter,FilterUser)
 	beego.AutoRouter(&controllers.LoginController{})
 	beego.AutoRouter(&controllers.JmlistController{})
 	beego.AutoRouter(&controllers.JmuserController{})

@@ -24,6 +24,13 @@ func (u *PermissionController) GetPermissionById(){
 	u.ServeJSON()
 }
 
+//返回所有用户和角色
+func (u *PermissionController) GetAllUserToRole(){
+	ss := models.GetAllUserToRole()
+	u.Data["json"] = ss
+	u.ServeJSON()
+}
+
 //增加用户角色
 func (u *PermissionController) CreateUserToRole(){
 	jmuser_id := u.GetString("jmuser_id")

@@ -2,6 +2,11 @@
 
 接口api:(v = ip:8009)
 status:0(失败)/1(成功)
+root管理员:账号:admin,密码:admin
+
+0.登录接口:/login/login
+参数:jmusername,jmuserpassword
+返回:status:0/1
 
 1.获取所有加盟信息
 地址：v/jmlist/getjmlist
@@ -55,10 +60,6 @@ status:0(失败)/1(成功)
 返回：status:0/1
 
 
-12.登录后获得该用户的所有角色以及角色含有的api路由权限信息(登录后需要先请求该接口，否则没有任何接口权限)
-地址：v/permission/getpermissionbyid
-方法：任意
-
 ===========================================================
 13.新闻获取
 地址:v/news/getnews
@@ -96,4 +97,38 @@ status:0(失败)/1(成功)
 地址:v/file/updatefile
 参数:file_id,file(文件),describe(文件描述,可省略)
 返回：status:0/1
+
+======数据丢失,数据库导出========
+22. '/permissionlist/getapibyroleid', '返回角色可操作(已拥有)的一组权限'
+
+23.'/permissionlist/createapitorole', '增加角色权限'
+参数：role_id(角色id)，api_id(api路由id)
+返回:status:0/1
+
+24.'/permissionlist/deleteapitorole', '删除角色权限'
+参数:roleapi_id(id)
+返回:status:0/1
+
+25, '/permissionlist/updateapitorole', '修改角色权限'
+参数:roleapi_id，role_id，api_id
+返回:status:0/1
+
+26.0.获得所有用户的角色以及api路由信息
+参数：
+
+26.1.12.获得该用户的所有角色以及角色含有的api路由权限信息
+地址：v/permission/getpermissionbyid
+
+方法：任意
+
+26. '/permission/createusertorole', '添加用户角色'
+参数:jmuser_id(用户id)，role_id(角色id)
+返回:status:0/1
+
+27, '/permission/deleteusertorole', '删除用户角色'
+参数:userrole_id(/permission/getallusertorole返回的json中permissionlist中的id)
+返回:status:0/1
+
+28, '/permission/updateusertorole', '修改用户角色'
+参数:userrole_id，jmuser_id，role_id
 

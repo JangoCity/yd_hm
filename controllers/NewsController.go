@@ -18,12 +18,13 @@ func (u *NewsController) GetNews(){
 
 //新闻分页
 func (u *NewsController) GetNewsByPage(){
+	category := u.GetString("category")
 	pageNum,_ := u.GetInt("pagenum")	//页码
 	num,_ := u.GetInt("num")	//每页数量
 	if num < 0 {
 		num = 10	//默认分页
 	}
-	ss := models.GetNewsByPage(pageNum,num)
+	ss := models.GetNewsByPage(pageNum,num,category)
 	u.Data["json"] = ss
 	u.ServeJSON()
 }

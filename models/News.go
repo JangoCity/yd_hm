@@ -43,12 +43,12 @@ func GetNews() []News {
 }
 
 //新闻,分页
-func GetNewsByPage(pageNum,num int) NewsInfo{
+func GetNewsByPage(pageNum,num int, category string) NewsInfo{
 	o := orm.NewOrm()
 	o.Using("default")
 	var newsinfo NewsInfo
 	var news []News
-	o.Raw("select *from `news` where isdelete=0 limit ?,?",(pageNum-1)*num,num).QueryRows(&news)
+	o.Raw("select *from `news` where category=? and isdelete=0 limit ?,?",category,(pageNum-1)*num,num).QueryRows(&news)
 	newsinfo.News = news
 	//总记录数
 	newsinfo.Newsnum = getNewsNum()
