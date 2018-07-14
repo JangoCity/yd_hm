@@ -17,7 +17,7 @@ type Permission struct {
 	return box.permissionlist
 }*/
 
-//根据用户id返回一组对应的可操作的权限列表
+//根据用户id返回一组对应的可访问操作的权限列表(包含用户的角色)
 func GetPermissionById(uid string) []*Permission{
 	o := orm.NewOrm()
 	o.Using("default")
@@ -44,4 +44,42 @@ func GetPermissionById(uid string) []*Permission{
 		}
 	}
 	return u
+}
+
+//用户角色的添加
+func CreateUserToRole(jmuser_id,role_id string) int{
+	o := orm.NewOrm()
+	o.Using("default")
+	_,err := o.Raw("insert `permission`(jmuser_id,role_id) value(?,?)",jmuser_id,role_id).Exec()
+	if err == nil {
+		return 1
+	}
+	fmt.Println("用户角色插入失败")
+	return 0
+}
+
+//用户角色的删除
+func DeleteUserToRole(id string) int64{
+	var num int64;//返回影响的行数
+	o := orm.NewOrm()
+	o.Using("default")
+	res,err := o.Raw("delete from `permission` where id=?",id).Exec()
+	if err == nil {
+		num, _ = res.RowsAffected()
+	}
+	fmt.Println("用户角色删除失败")
+	return num
+}
+
+//修改角色对应的路由
+func UpdateUserToRole(id,jmuser_id,role_id string) int64{
+	var num int64;//返回影响的行数
+	o := orm.NewOrm()
+	o.Using("default")
+	res,err := o.Raw("update `permission` set jmuser_id=?,role_id=? where id=?",jmuser_id,role_id,id).Exec()
+	if err == nil {
+		num, _ = res.RowsAffected()
+	}
+	fmt.Println("用户角色修改失败")
+	return num
 }

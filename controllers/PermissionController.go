@@ -24,4 +24,30 @@ func (u *PermissionController) GetPermissionById(){
 	u.ServeJSON()
 }
 
+//增加用户角色
+func (u *PermissionController) CreateUserToRole(){
+	jmuser_id := u.GetString("jmuser_id")
+	role_id := u.GetString("role_id")
+	ss := models.CreateUserToRole(jmuser_id,role_id)
+	u.Data["json"] = map[string]int{"status":ss}
+	u.ServeJSON()
+}
+
+//删除用户角色
+func (u *PermissionController) DeleteUserToRole(){
+	userrole_id := u.GetString("userrole_id")
+	ss := models.DeleteUserToRole(userrole_id)
+	u.Data["json"] = map[string]int64{"status":ss}
+	u.ServeJSON()
+}
+
+//修改用户角色
+func (u *PermissionController) UpdateUserToRole(){
+	userrole_id := u.GetString("userrole_id")
+	jmuser_id := u.GetString("jmuser_id")
+	role_id := u.GetString("role_id")
+	ss := models.UpdateUserToRole(userrole_id,jmuser_id,role_id)
+	u.Data["json"] = map[string]int64{"status":ss}
+	u.ServeJSON()
+}
 

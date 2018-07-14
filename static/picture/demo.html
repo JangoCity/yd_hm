@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CKEditor 5 – Document editor</title>
+
+
+</head>
+<body>
+    <h1>Document editor</h1>
+
+    <!-- The toolbar will be rendered in this container. -->
+    <div id="toolbar-container"></div>
+
+    <!-- This container will become the editable. -->
+    <div id="editor">
+        <p>中文测试</p>
+    </div>
+    <script src="https://cdn.ckeditor.com/ckeditor5/10.1.0/decoupled-document/ckeditor.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+
+	var contentdata;
+        DecoupledEditor
+            .create( document.querySelector( '#editor' ) )
+            .then( editor => {
+                const toolbarContainer = document.querySelector( '#toolbar-container' );
+
+                toolbarContainer.appendChild( editor.ui.view.toolbar.element );
+
+    contentdata = editor.getData();
+
+	    editor.plugins.get('FileRepository').createUploadAdapter = (loader) => {
+            return new FileUploadAdapter(loader);
+        }; 
+            } )
+            .catch( error => {
+                console.error( error );
+            } );
+
+	
+   class FileUploadAdapter {
+     constructor(loader) {
+        this.loader = loader;
+    }
+
+    upload() {
+        const data = new FormData();
+        const config = {
+            headers: {'content-type': 'multipart/form-data'}
+        };
+
+        data.append('file', this.loader.file);
+
+        return new Promise((resolve, reject) => {
+            axios.post('http://127.0.0.1:8009/file/getfilepath',
+	 data, config)
+	.then(response => {
+                resolve({
+                    default: response.data.default
+                })
+            }).catch(error => {
+                reject(error)
+            });
+        });
+    }
+
+    abort() {
+        //
+    }
+} 
+    </script>
+</body>
+</html>
+
+

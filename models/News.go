@@ -5,26 +5,63 @@ import (
 	"fmt"
 )
 
+type NewsInfo struct {
+	Newsnum			string
+	News 			[]News
+}
+
 type News struct {
 	Id    			int
 	Title			string
+	Category		string		//类别
 	Author			string
 	Content			string		//`type(text)`
+	Publish_date	string
+	Perview_picture	string		//标题预览图
 }
+
+//获得新闻总记录数
+func getNewsNum() string{
+	var num = "0"
+	o := orm.NewOrm()
+	o.Using("default")
+	var maps []orm.Params
+	num2, err := o.Raw("SELECT count(id) as num FROM `news`").Values(&maps)
+	if err == nil && num2 > 0 {
+		num = maps[0]["num"].(string)
+	}
+	return num
+}
+
 //获得所有新闻信息展示
 func GetNews() []News {
 	o := orm.NewOrm()
 	o.Using("default")
 	var news []News
-	o.Raw("select *from `news`").QueryRows(&news)
+	o.Raw("select *from `news` where isdelete=0").QueryRows(&news)
 	return news
 }
+
+//新闻,分页
+func GetNewsByPage(pageNum,num int) NewsInfo{
+	o := orm.NewOrm()
+	o.Using("default")
+	var newsinfo NewsInfo
+	var news []News
+	o.Raw("select *from `news` where isdelete=0 limit ?,?",(pageNum-1)*num,num).QueryRows(&news)
+	newsinfo.News = news
+	//总记录数
+	newsinfo.Newsnum = getNewsNum()
+	return newsinfo
+}
 //插入新闻
-func InsertNews(title,author,content string) int{
+func InsertNews(title,category,author,content,publish_date,perview_picture string) int{
+	//初始化日期
+	//publish_date = time.Now().Format("2006-01-02")//时间戳"2006-01-02 15:04:05"是参考格式,具体数字可变
 	//判空前端做
 	o := orm.NewOrm()
 	o.Using("default")
-	_,err := o.Raw("insert `news`(title,author,content) value(?,?,?)",title,author,content).Exec()
+	_,err := o.Raw("insert `news`(title,category,author,content,publish_date,perview_picture) value(?,?,?,?,?,?)",title,category,author,content,publish_date,perview_picture).Exec()
 	if err == nil {
 		return 1
 	}
@@ -38,7 +75,8 @@ func DeleteNewsById(id string) int64{
 
 	o := orm.NewOrm()
 	o.Using("default")
-	res,err := o.Raw("delete from `news` where id=?",id).Exec()
+	res,err := o.Raw("update `news` set isdelete=1 where id=?",id).Exec()
+	//res,err := o.Raw("delete from `news` where id=?",id).Exec()
 	if err == nil {
 		num, _ = res.RowsAffected()
 	}
@@ -47,12 +85,12 @@ func DeleteNewsById(id string) int64{
 }
 
 //更新新闻,注：提交相同数据返回行数为0
-func UpdateNews(id,title,author,content string) int64{
+func UpdateNews(id,title,category,author,content,publish_date,perview_picture string) int64{
 	var num int64;//返回影响的行数
 	//判空前端做
 	o := orm.NewOrm()
 	o.Using("default")
-	res,err := o.Raw("update `news`	set title=?,author=?,content=? where id=?",title,author,content,id).Exec()
+	res,err := o.Raw("update `news` set title=?,category=?,author=?,content=?,publish_date=?,perview_picture=? where id=?",title,category,author,content,publish_date,perview_picture,id).Exec()
 	if err == nil {
 		num, _ = res.RowsAffected()
 	}

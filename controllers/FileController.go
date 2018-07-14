@@ -26,6 +26,13 @@ func (u *FileController) filePath() string{
 	return "/"+path
 }
 
+//返回上传的文件/图片路径
+func (u *FileController) GetFilePath() {
+	path := u.filePath()
+	u.Data["json"] = map[string]string{"default":path}
+	u.ServeJSON()
+}
+
 //获得所有文件数据
 func (u *FileController) GetAllFile(){
 	ss := models.GetFile()

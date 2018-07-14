@@ -62,10 +62,13 @@ status:0(失败)/1(成功)
 ===========================================================
 13.新闻获取
 地址:v/news/getnews
+13.1.新闻/产品类获取,分页展示
+地址:/news/getnewsbypage
+参数:pageNum(页码),num(分页数量,默认5)
 14.新增新闻
 地址:v/news/createnews
 方法：任意
-参数：title(标题),author(作者),content(文本内容)
+参数：title,category,author,content(ckeditor富文本),publish_date(发布日期),perview_picture(预览图)
 15.删除新闻
 地址:v/news/deletenewsbyid
 方法:任意
@@ -73,11 +76,14 @@ status:0(失败)/1(成功)
 16.更新新闻(文档中新闻替换)
 地址：v/news/updatenews
 方法：任意
-参数：news_id(新闻获取中返回的id),title(标题),author(作者),content(文本内容)
+参数：news_id(新闻获取中返回的id),title,category,author,content(ckeditor富文本),publish_date,perview_picture
 
 =====================文件/图片处理===================================
-17.获得所有上传文件/图片路径
+17.获得所有已经上传的文件/图片路径
 地址:v/file/getallfile
+17.1.返回刚上传的单个文件/图片路径(富文本编辑器)
+地址:v/file/getfilepath
+参数:name=file
 18.上传一份文件/图片
 地址:v/file/createfile	(enctype="multipart/form-data"不可少)
 参数:file(文件),describe(文件描述,可省略)
@@ -89,6 +95,5 @@ status:0(失败)/1(成功)
 20.更新文件(会删除之前的文件，更新成新的文件)
 地址:v/file/updatefile
 参数:file_id,file(文件),describe(文件描述,可省略)
-返回：status:0/1
 返回：status:0/1
 
