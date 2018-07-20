@@ -51,6 +51,21 @@ func DeleteJMuserById(id string) int64{
 	return num
 }
 
+//更新加盟用户信息
+func UpdateJMuserById(id,jm_name,jm_password string) int64{
+	var num int64;//返回影响的行数
+
+	o := orm.NewOrm()
+	o.Using("default")
+	jm_password = util.AesEn(jm_password)
+	res,err := o.Raw("update `jmuser` set jm_name=?,jm_password=? where id=?",jm_name,jm_password,id).Exec()
+	if err == nil {
+		num, _ = res.RowsAffected()
+	}
+	fmt.Println("加盟信息更新失败")
+	return num
+}
+
 func init() {
 	// 需要在init中注册定义的model
 	orm.RegisterModel(new(Jmuser))

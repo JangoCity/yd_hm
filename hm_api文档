@@ -1,13 +1,15 @@
 宏美国际
 
-接口api:(v = ip:8009)
+接口api:(v = 192.168.31.193:8009)
 status:0(失败)/1(成功)
 root管理员:账号:admin,密码:admin
+方法:get/post
 
 0.登录接口:/login/login
 参数:jmusername,jmuserpassword
 返回:status:0/1
 
+=================首页展示的加盟信息录入以及后台显示======================
 1.获取所有加盟信息
 地址：v/jmlist/getjmlist
 方法：任意
@@ -16,6 +18,8 @@ root管理员:账号:admin,密码:admin
 方法：任意
 参数名：jm_name(姓名),jm_email(邮箱),jm_phone(联系方式),jm_content(备注)
 返回：status:0/1
+
+================真正加盟商用户===========================================
 3.获取加盟用户信息
 地址：v/jmuser/getjmuser
 方法：任意
@@ -29,55 +33,79 @@ root管理员:账号:admin,密码:admin
 方法：任意
 参数名：jmuser_id(获取加盟用户getjmuser中返回的id值)
 返回：status:0/1
-
+v2.5.更新加盟用户
+地址:/jmuser/updatejmuserbyid
+参数:jmuser_id,jm_name(姓名),jm_password(密码)
 
 
 ===========================================================
 权限类：
-6.获得角色信息
+===6.获得角色信息
 地址：v/role/getrole
 方法：任意
-7.新增角色
+===7.新增角色
 地址：v/role/createrole
 方法：任意
 参数：role_name
 返回：status:0/1
-8.删除角色
+===8.删除角色
 地址：v/role/deleterolebyid
 
-9.获得api路由信息
+===9.获得api路由信息
 地址：v/api/getapi
 方法：任意
-10.新增api路由
+===10.新增api路由
 地址：v/api/createapi
 方法：任意
 参数：api_url(api路由),api_comment(路由详情描述)
 返回：status:0/1
-11.删除api路由
+===11.删除api路由
 地址：v/api/deleteapibyid
 方法：任意
 参数：api_id(获取api路由信息中返回的id)
 返回：status:0/1
 
 
-===========================================================
+=======================新闻类======================
 13.新闻获取
 地址:v/news/getnews
-13.1.新闻/产品类获取,分页展示
+13.1.新闻类获取,分页展示,分类
 地址:/news/getnewsbypage
-参数:pageNum(页码),num(分页数量,默认5)
+参数:pageNum(页码),num(分页数量,默认5),category(分类,可省略)
 14.新增新闻
 地址:v/news/createnews
-方法：任意
 参数：title,category,author,content(ckeditor富文本),publish_date(发布日期),perview_picture(预览图)
+返回:status:0/1
 15.删除新闻
 地址:v/news/deletenewsbyid
 方法:任意
 参数:news_id(新闻获取中返回的id)
+返回:status:0/1
 16.更新新闻(文档中新闻替换)
 地址：v/news/updatenews
 方法：任意
 参数：news_id(新闻获取中返回的id),title,category,author,content(ckeditor富文本),publish_date,perview_picture
+
+=========================产品类==========================================
+
+v2.1.获取产品,分页,分类
+地址:/product/getproductbypage
+参数:category(分类,可省略),pagenum(页码),num(页记录数)
+v2.2.新增产品
+地址:/product/createproduct
+参数:category(分类),model(型号),name(名称),specal(规格),introduce(产品介绍),file_Id(文件id,上传图片时返回的id)
+返回:status:0/1
+v2.3.更新产品
+地址:/product/updateproduct
+参数:id(产品id),category(分类),model(型号),name(名称),specal(规格),introduce(产品介绍),file_Id(文件id,上传图片时返回的id)
+返回:status:0/1
+v2.4.删除产品
+地址:/product/deleteproductbyid
+参数:id
+返回:status:0/1
+v2.5.产品搜索(搜索功能)
+地址:/product/searchproduct
+参数:key(搜索关键字),pagenum(页码),num(当前页)
 
 =====================文件/图片处理===================================
 17.获得所有已经上传的文件/图片路径
@@ -101,28 +129,24 @@ root管理员:账号:admin,密码:admin
 ======数据丢失,数据库导出========
 22. '/permissionlist/getapibyroleid', '返回角色可操作(已拥有)的一组权限'
 
-23.'/permissionlist/createapitorole', '增加角色权限'
+====23.'/permissionlist/createapitorole', '增加角色权限'
 参数：role_id(角色id)，api_id(api路由id)
 返回:status:0/1
 
-24.'/permissionlist/deleteapitorole', '删除角色权限'
+====24.'/permissionlist/deleteapitorole', '删除角色权限'
 参数:roleapi_id(id)
 返回:status:0/1
 
-25, '/permissionlist/updateapitorole', '修改角色权限'
+====25, '/permissionlist/updateapitorole', '修改角色权限'
 参数:roleapi_id，role_id，api_id
 返回:status:0/1
 
-26.0.获得所有用户的角色以及api路由信息
-参数：
-
-26.1.12.获得该用户的所有角色以及角色含有的api路由权限信息
+====26.1.12.获得该用户的所有角色以及角色含有的api路由权限信息
 地址：v/permission/getpermissionbyid
-
 方法：任意
 
 26. '/permission/createusertorole', '添加用户角色'
-参数:jmuser_id(用户id)，role_id(角色id)
+参数:jmuser_id(返回用户的id)，role_id(返回角色的id)
 返回:status:0/1
 
 27, '/permission/deleteusertorole', '删除用户角色'

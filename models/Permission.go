@@ -12,11 +12,6 @@ type Permission struct {
 	Permissionlist	[]*Permissionlist	//返回json数据,属性名Permissionlist首字母要大写！！！
 }
 
-/*func (box *Permission) AddItem(item *Permissionlist) []*Permissionlist {
-	box.permissionlist = append(box.permissionlist, item)
-	return box.permissionlist
-}*/
-
 //根据用户id返回一组对应的可访问操作的权限列表(包含用户的角色)
 func GetPermissionById(uid string) []*Permission{
 	o := orm.NewOrm()

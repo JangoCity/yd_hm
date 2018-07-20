@@ -8,6 +8,7 @@ import (
 	"os"
 	"crypto/cipher"
 	"encoding/hex"
+	"net"
 )
 
 var commonIV = []byte{0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f}
@@ -67,3 +68,24 @@ func Salt() string{
 	return s
 }
 
+//返回本地一个ip(dock0,ipv4)
+func GetIntranetIp() string{
+	addrs, err := net.InterfaceAddrs()
+
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+	for _, address := range addrs {
+
+		// 检查ip地址判断是否回环地址
+		if ipnet, ok := address.(*net.IPNet); ok && !ipnet.IP.IsLoopback() {
+			if ipnet.IP.To4() != nil {
+				return ipnet.IP.String()
+				//fmt.Println("ip:", ipnet.IP.String())
+			}
+
+		}
+	}
+	return ""
+}

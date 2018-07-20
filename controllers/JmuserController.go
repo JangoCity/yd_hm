@@ -35,3 +35,12 @@ func (u *JmuserController) DeleteJMuserById(){
 	u.ServeJSON()
 }
 
+//加盟用户更新,返回状态1/0
+func (u *JmuserController) UpdateJMuserById(){
+	jmuser_id := u.GetString("jmuser_id")
+	jm_name := u.GetString("jm_name")
+	jm_password := u.GetString("jm_password")
+	n := models.UpdateJMuserById(jmuser_id,jm_name,jm_password)
+	u.Data["json"]=map[string]int64{"status":n}
+	u.ServeJSON()
+}

@@ -43,16 +43,26 @@ func GetNews() []News {
 }
 
 //新闻,分页
-func GetNewsByPage(pageNum,num int, category string) NewsInfo{
+func GetNewsByPage(pageNum,num int, category string) interface{}{
+	var getinfo GetInfo
+
 	o := orm.NewOrm()
 	o.Using("default")
-	var newsinfo NewsInfo
 	var news []News
-	o.Raw("select *from `news` where category=? and isdelete=0 limit ?,?",category,(pageNum-1)*num,num).QueryRows(&news)
-	newsinfo.News = news
-	//总记录数
-	newsinfo.Newsnum = getNewsNum()
-	return newsinfo
+	switch category {
+	case "":
+		o.Raw("select *from `news` where isdelete=0 limit ?,?",(pageNum-1)*num,num).QueryRows(&news)
+		break
+	default:
+		o.Raw("select *from `news` where category=? and isdelete=0 limit ?,?",category,(pageNum-1)*num,num).QueryRows(&news)
+	}
+	//data
+	getinfo.Data = news
+	//页码,页记录数,总记录数
+	getinfo.Pager.ClientPage = pageNum
+	getinfo.Pager.EveryPage = num
+	getinfo.Pager.SumPage = getProductNum()
+	return getinfo
 }
 //插入新闻
 func InsertNews(title,category,author,content,publish_date,perview_picture string) int{
