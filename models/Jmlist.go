@@ -21,11 +21,11 @@ func GetJmlist() []Jmlist {
 	return jmlist
 }
 //插入加盟信息
-func InsertJM(jm_name,jm_email,jm_phone,jm_content string) int{
+func InsertJM(jm_name,jm_email,jm_phone,jm_place,jm_content string) int{
 	//判空前端做
 	o := orm.NewOrm()
 	o.Using("default")
-	_,err := o.Raw("insert `jmlist`(jm_name,jm_email,jm_phone,jm_content) value(?,?,?,?)",jm_name,jm_email,jm_phone,jm_content).Exec()
+	_,err := o.Raw("insert `jmlist`(jm_name,jm_email,jm_phone,jm_place,jm_content) value(?,?,?,?,?)",jm_name,jm_email,jm_phone,jm_place,jm_content).Exec()
 	if err == nil {
 		return 1
 	}

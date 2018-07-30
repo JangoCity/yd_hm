@@ -11,6 +11,14 @@ type FileController struct {
 	beego.Controller
 }
 
+//返回上传的文件/图片路径
+func (u *FileController) GetFileById() {
+	id,_ := u.GetInt("id")
+	ss := models.GetFileById(id)
+	u.Data["json"] = ss
+	u.ServeJSON()
+}
+
 //获得上传的文件路径,不对外暴露(小写)
 func (u *FileController) filePath() string{
 	//获得文件及保存到文件夹
@@ -29,7 +37,8 @@ func (u *FileController) filePath() string{
 //返回上传的文件/图片路径
 func (u *FileController) GetFilePath() {
 	path := u.filePath()
-	u.Data["json"] = map[string]string{"default":path}
+	id := models.GetFilePath(path)
+	u.Data["json"] = map[string]string{"default":path,"id":id}
 	u.ServeJSON()
 }
 

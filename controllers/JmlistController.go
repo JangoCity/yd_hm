@@ -21,8 +21,9 @@ func (u *JmlistController) CreateJmlist(){
 	jm_name := u.GetString("jm_name")
 	jm_email := u.GetString("jm_email")
 	jm_phone := u.GetString("jm_phone")
+	jm_place := u.GetString("jm_place")
 	jm_content := u.GetString("jm_content")
-	n := models.InsertJM(jm_name,jm_email,jm_phone,jm_content)
+	n := models.InsertJM(jm_name,jm_email,jm_phone,jm_place,jm_content)
 	u.Data["json"]=map[string]int{"status":n}
 	u.ServeJSON()
 }

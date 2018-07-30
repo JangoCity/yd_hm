@@ -15,6 +15,13 @@ func (u *NewsController) GetNews(){
 	u.Data["json"] = ss
 	u.ServeJSON()
 }
+//新闻,id
+func (u *NewsController) GetNewsById(){
+	id,_ := u.GetInt("id")	//每页数量
+	ss := models.GetNewsById(id)
+	u.Data["json"] = ss
+	u.ServeJSON()
+}
 
 //新闻分页
 func (u *NewsController) GetNewsByPage(){

@@ -26,7 +26,19 @@ func getNewsNum() string{
 	o := orm.NewOrm()
 	o.Using("default")
 	var maps []orm.Params
-	num2, err := o.Raw("SELECT count(id) as num FROM `news`").Values(&maps)
+	num2, err := o.Raw("SELECT count(id) as num FROM `news` where isdelete=0").Values(&maps)
+	if err == nil && num2 > 0 {
+		num = maps[0]["num"].(string)
+	}
+	return num
+}
+//获得新闻总记录数,类别
+func getNewsCategoryNum(category string) string{
+	var num = "0"
+	o := orm.NewOrm()
+	o.Using("default")
+	var maps []orm.Params
+	num2, err := o.Raw("SELECT count(id) as num FROM `news` where isdelete=0 and category=?",category).Values(&maps)
 	if err == nil && num2 > 0 {
 		num = maps[0]["num"].(string)
 	}
@@ -41,7 +53,15 @@ func GetNews() []News {
 	o.Raw("select *from `news` where isdelete=0").QueryRows(&news)
 	return news
 }
+//根据id获取新闻
+func GetNewsById(id int) interface{}{
 
+	o := orm.NewOrm()
+	o.Using("default")
+	var news []News
+	o.Raw("select *from `news` where  isdelete=0 and id=?",id).QueryRows(&news)
+	return news
+}
 //新闻,分页
 func GetNewsByPage(pageNum,num int, category string) interface{}{
 	var getinfo GetInfo
@@ -51,17 +71,18 @@ func GetNewsByPage(pageNum,num int, category string) interface{}{
 	var news []News
 	switch category {
 	case "":
-		o.Raw("select *from `news` where isdelete=0 limit ?,?",(pageNum-1)*num,num).QueryRows(&news)
+		o.Raw("select *from `news` where isdelete=0 order by id desc limit ?,?",(pageNum-1)*num,num).QueryRows(&news)
+		getinfo.Pager.SumPage = getNewsNum()
 		break
 	default:
-		o.Raw("select *from `news` where category=? and isdelete=0 limit ?,?",category,(pageNum-1)*num,num).QueryRows(&news)
+		getinfo.Pager.SumPage = getNewsCategoryNum(category)
+		o.Raw("select *from `news` where category=? and isdelete=0 order by id desc limit ?,?",category,(pageNum-1)*num,num).QueryRows(&news)
 	}
 	//data
 	getinfo.Data = news
 	//页码,页记录数,总记录数
 	getinfo.Pager.ClientPage = pageNum
 	getinfo.Pager.EveryPage = num
-	getinfo.Pager.SumPage = getProductNum()
 	return getinfo
 }
 //插入新闻

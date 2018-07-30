@@ -16,17 +16,20 @@ root管理员:账号:admin,密码:admin
 2.插入加盟信息
 地址：v/jmlist/createjmlist
 方法：任意
-参数名：jm_name(姓名),jm_email(邮箱),jm_phone(联系方式),jm_content(备注)
+参数名：jm_name(姓名),jm_email(邮箱),jm_phone(联系方式),jm_place,jm_content(备注)
 返回：status:0/1
 
 ================真正加盟商用户===========================================
+3.0根据id获取加盟用户信息
+地址:/jmuser/getjmuserbyid
+参数：id
 3.获取加盟用户信息
 地址：v/jmuser/getjmuser
 方法：任意
 4.创建加盟用户账号密码：(密码最大25位)
 地址：v/jmuser/createjmuser
 方法：任意
-参数名：jm_name(姓名),jm_password(密码),jm_email(邮箱),jm_phone(联系方式)
+参数名：jm_name(姓名),jm_password(密码),jm_email(邮箱),jm_phone(联系方式)，role_id(角色id)
 返回：status:0/1
 5.删除加盟用户
 地址：v/jmuser/deletejmuserbyid
@@ -34,8 +37,8 @@ root管理员:账号:admin,密码:admin
 参数名：jmuser_id(获取加盟用户getjmuser中返回的id值)
 返回：status:0/1
 v2.5.更新加盟用户
-地址:/jmuser/updatejmuserbyid
-参数:jmuser_id,jm_name(姓名),jm_password(密码)
+地址:/jmuser/updatejmuserbyid		
+参数:jmuser_id,jm_name(姓名),jm_password(密码),jm_email,jm_phone,role_id(角色id)
 
 
 ===========================================================
@@ -67,6 +70,9 @@ v2.5.更新加盟用户
 
 
 =======================新闻类======================
+13.0.根据id获取新闻
+地址:/news/getnewsbyid
+参数:id
 13.新闻获取
 地址:v/news/getnews
 13.1.新闻类获取,分页展示,分类
@@ -87,17 +93,19 @@ v2.5.更新加盟用户
 参数：news_id(新闻获取中返回的id),title,category,author,content(ckeditor富文本),publish_date,perview_picture
 
 =========================产品类==========================================
-
+v2.0.根据id获取产品
+地址:/product/getproductbyid
+参数:id
 v2.1.获取产品,分页,分类
 地址:/product/getproductbypage
 参数:category(分类,可省略),pagenum(页码),num(页记录数)
 v2.2.新增产品
 地址:/product/createproduct
-参数:category(分类),model(型号),name(名称),specal(规格),introduce(产品介绍),file_Id(文件id,上传图片时返回的id)
+参数:category(分类),model(型号),name(名称),specal(规格),introduce(产品介绍),file_id(文件id,上传图片时返回的id),link1,link2
 返回:status:0/1
 v2.3.更新产品
 地址:/product/updateproduct
-参数:id(产品id),category(分类),model(型号),name(名称),specal(规格),introduce(产品介绍),file_Id(文件id,上传图片时返回的id)
+参数:id(产品id),category(分类),model(型号),name(名称),specal(规格),introduce(产品介绍),file_id(文件id,上传图片时返回的id),link1,link2
 返回:status:0/1
 v2.4.删除产品
 地址:/product/deleteproductbyid
@@ -108,9 +116,12 @@ v2.5.产品搜索(搜索功能)
 参数:key(搜索关键字),pagenum(页码),num(当前页)
 
 =====================文件/图片处理===================================
+17.0.1.根据id获得上传文件/图片路径
+地址:/file/getfilebyid
+参数:id(文件id)
 17.获得所有已经上传的文件/图片路径
 地址:v/file/getallfile
-17.1.返回刚上传的单个文件/图片路径(富文本编辑器)
+17.1.返回刚上传的单个文件/图片路径(富文本编辑器)/以及返回相应的id
 地址:v/file/getfilepath
 参数:name=file
 18.上传一份文件/图片
@@ -127,7 +138,7 @@ v2.5.产品搜索(搜索功能)
 返回：status:0/1
 
 ======数据丢失,数据库导出========
-22. '/permissionlist/getapibyroleid', '返回角色可操作(已拥有)的一组权限'
+====22. '/permissionlist/getapibyroleid', '返回角色可操作(已拥有)的一组权限'
 
 ====23.'/permissionlist/createapitorole', '增加角色权限'
 参数：role_id(角色id)，api_id(api路由id)
@@ -156,3 +167,19 @@ v2.5.产品搜索(搜索功能)
 28, '/permission/updateusertorole', '修改用户角色'
 参数:userrole_id，jmuser_id，role_id
 
+===============================账单汇总=================================================
+29.创建账单
+地址:/summary/createsummary
+参数:income(收入表数据),outcome(支出表数据),flow(流水表数据)，name
+30.修改账单
+地址:/summary/updatesummary
+参数:id(账单id),income(收入表数据),outcome(支出表数据),flow(流水表数据)，name
+31.获得用户对应的账单数据，分页
+地址:/summary/getsummarybypage
+参数：clientPage(页码),everyPage(每页数量)
+32.删除账单
+地址；/summary/deletesummarybyid
+参数:id(账单id)
+33.根据id获取账单
+地址：/summary/getsummarybyid
+参数:id

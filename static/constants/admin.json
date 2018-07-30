@@ -1,0 +1,48 @@
+[
+  {
+      "key": "/app/setting", "title": "系统配置", "icon": "setting",
+      "sub": [
+          { "key": "/app/setting/chpwd", "title": "修改密码", "icon": "" }
+      ]
+  },
+  {
+      "key": "/app/comment", "title": "留言管理", "icon": "bars",
+      "sub": [
+          { "key": "/app/comment/view", "title": "查看留言", "icon": "" }
+      ]
+  },
+  {
+      "key": "/app/column", "title": "产品管理", "icon": "file-text",
+      "sub": [
+          { "key": "/app/column/view", "title": "查看产品", "icon": "" },
+          { "key": "/app/column/add", "title": "添加产品", "icon": "" }
+      ]
+  },
+  {
+      "key": "/app/article", "title": "文章管理", "icon": "edit",
+      "sub": [
+          { "key": "/app/article/view", "title": "查看文章", "icon": "" },
+          { "key": "/app/article/add", "title": "添加文章", "icon": "" }
+      ]
+  },
+  {
+      "key": "/app/user", "title": "用户管理", "icon": "user",
+      "sub": [
+          { "key": "/app/user/view", "title": "查看用户", "icon": "" },
+          { "key": "/app/user/add", "title": "添加用户", "icon": "" }
+      ]
+  },
+  {
+      "key": "/app/admin", "title": "轮播图管理", "icon": "credit-card",
+      "sub": [
+          { "key": "/app/carousel/view", "title": "查看轮播图", "icon": "" }
+      ]
+  },
+  {
+      "key": "/app/bill", "title": "账单管理", "icon": "team",
+      "sub": [
+          { "key": "/app/bill/view", "title": "查看所有账单", "icon": "" },
+          { "key": "/app/bill/add", "title": "添加账单", "icon": "" }
+      ]
+  }
+]

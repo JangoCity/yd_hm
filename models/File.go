@@ -4,12 +4,24 @@ import (
 	"fmt"
 	"github.com/astaxie/beego/orm"
 	"os"
+	"github.com/astaxie/beego"
 )
 
 type File struct {
 	Id					int
 	File_address		string
 	Describe			string
+}
+
+func GetFileById(id int) []File{
+	o := orm.NewOrm()
+	o.Using("default")
+	var file []File
+	o.Raw("select *from `file` where id=?",id).QueryRows(&file)
+	for i := 0 ; i < len(file); i++{
+		file[i].File_address = beego.AppConfig.String("domain") + file[i].File_address
+	}
+	return file
 }
 
 //获得文件信息
@@ -31,6 +43,24 @@ func UploadFile(file_address,describe string) int{
 	}
 	fmt.Println("文件上传失败")
 	return 0
+}
+//获得刚上传的文件id
+func GetFilePath(file_address string) string{
+	id := "0"
+	//判空前端做
+	o := orm.NewOrm()
+	o.Using("default")
+	_,err := o.Raw("insert `file`(file_address) value(?)",file_address).Exec()
+	if err == nil {
+
+		var maps []orm.Params
+		num, err := o.Raw("SELECT LAST_INSERT_ID() as id").Values(&maps)
+		if err == nil && num > 0 {
+			id = maps[0]["id"].(string)
+		}
+	}
+	fmt.Println("文件上传失败")
+	return id
 }
 
 //删除文件信息

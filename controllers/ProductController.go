@@ -9,6 +9,13 @@ type ProductController struct {
 	beego.Controller
 }
 
+//根据id获取产品
+func (u *ProductController) GetProductById(){
+	id,_ := u.GetInt("id")	//每页数量
+	ss := models.GetProductById(id)
+	u.Data["json"] = ss
+	u.ServeJSON()
+}
 //产品分页,分类
 func (u *ProductController) GetProductByPage(){
 	pageNum := 1
@@ -30,8 +37,10 @@ func (u *ProductController) CreateProduct(){
 	specal := u.GetString("specal")
 	introduce := u.GetString("introduce")
 	file_id := u.GetString("file_id")
+	link1 := u.GetString("link1")
+	link2 := u.GetString("link2")
 
-	n := models.InsertProduct(category,model,name,specal,introduce,file_id)
+	n := models.InsertProduct(category,model,name,specal,introduce,file_id,link1,link2)
 	u.Data["json"]=map[string]int{"status":n}
 	u.ServeJSON()
 }
@@ -53,8 +62,10 @@ func (u *ProductController) UpdateProduct(){
 	specal := u.GetString("specal")
 	introduce := u.GetString("introduce")
 	file_id := u.GetString("file_id")
+	link1 := u.GetString("link1")
+	link2 := u.GetString("link2")
 
-	n := models.UpdateProduct(id,category,model,name,specal,introduce,file_id)
+	n := models.UpdateProduct(id,category,model,name,specal,introduce,file_id,link1,link2)
 	u.Data["json"]=map[string]int64{"status":n}
 	u.ServeJSON()
 }

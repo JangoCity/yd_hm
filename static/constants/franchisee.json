@@ -1,0 +1,15 @@
+[
+  {
+      "key": "/app/setting", "title": "系统配置", "icon": "setting",
+      "sub": [
+          { "key": "/app/setting/chpwd", "title": "修改密码", "icon": "" }
+      ]
+  },
+  {
+      "key": "/app/bill", "title": "账单管理", "icon": "team",
+      "sub": [
+          { "key": "/app/bill/view", "title": "查看所有账单", "icon": "" },
+          { "key": "/app/bill/add", "title": "添加账单", "icon": "" }
+      ]
+  }
+]
