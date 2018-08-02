@@ -10,7 +10,7 @@ import (
 
 func main() {
 	orm.Debug = true
-	//fmt.Println("ip:"+util.GetIntranetIp())
+	beego.SetLogger("file", `{"filename":"logs/yd_hm.log"}`)
 	beego.BConfig.WebConfig.Session.SessionOn = true
 	orm.RegisterDriver("mysql",orm.DRMySQL)
 	orm.RegisterDataBase("default","mysql","root:"+beego.AppConfig.String("db.password")+"@tcp(127.0.0.1:3306)/hmgj?charset=utf8")

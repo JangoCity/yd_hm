@@ -42,27 +42,57 @@ func GetSummaryByPage(uid string, clientPage, everyPage int) interface{} {
 	o.Using("default")
 
 	var maps []orm.Params
-	num2, err := o.Raw("SELECT count(id) as num FROM `summary` where jmuser_id=?",uid).Values(&maps)
-	//有数据是返回相应信息
-	if err == nil && num2 > 0 {
-		var summary []Summary
-		var getinfo lib.GetInfo
-		o.Raw("select *from `summary` where jmuser_id=? order by id desc limit ?,?",uid, (clientPage-1)*everyPage, everyPage).QueryRows(&summary)
-		//统计页码等状态
-		var SumPage = "0"
-		SumPage = maps[0]["num"].(string)
-
-		getinfo.Status = 200
-		getinfo.Msg = "请求成功"
-		getinfo.Data = summary //数据
-		getinfo.Pager.SumPage = SumPage
-		getinfo.Pager.ClientPage = clientPage
-		getinfo.Pager.EveryPage = everyPage
-
-		info = getinfo
-	} else {
-		info = lib.MapError
+	var role_id	string
+	num2, err := o.Raw("SELECT role_id from `permission` where jmuser_id=?",uid).Values(&maps)
+	if num2 > 0{
+		role_id = maps[0]["role_id"].(string)
 	}
+	if role_id == "1"{
+		num2, err = o.Raw("SELECT count(id) as num FROM `summary`").Values(&maps)
+		//有数据是返回相应信息
+		if err == nil && num2 > 0 {
+			var summary []Summary
+			var getinfo lib.GetInfo
+			o.Raw("select *from `summary` order by id desc limit ?,?", (clientPage-1)*everyPage, everyPage).QueryRows(&summary)
+			//统计页码等状态
+			var SumPage = "0"
+			SumPage = maps[0]["num"].(string)
+
+			getinfo.Status = 200
+			getinfo.Msg = "请求成功"
+			getinfo.Data = summary //数据
+			getinfo.Pager.SumPage = SumPage
+			getinfo.Pager.ClientPage = clientPage
+			getinfo.Pager.EveryPage = everyPage
+
+			info = getinfo
+		} else {
+			info = lib.MapError
+		}
+	}else {
+		num2, err = o.Raw("SELECT count(id) as num FROM `summary` where jmuser_id=?",uid).Values(&maps)
+		//有数据是返回相应信息
+		if err == nil && num2 > 0 {
+			var summary []Summary
+			var getinfo lib.GetInfo
+			o.Raw("select *from `summary` where jmuser_id=? order by id desc limit ?,?",uid, (clientPage-1)*everyPage, everyPage).QueryRows(&summary)
+			//统计页码等状态
+			var SumPage = "0"
+			SumPage = maps[0]["num"].(string)
+
+			getinfo.Status = 200
+			getinfo.Msg = "请求成功"
+			getinfo.Data = summary //数据
+			getinfo.Pager.SumPage = SumPage
+			getinfo.Pager.ClientPage = clientPage
+			getinfo.Pager.EveryPage = everyPage
+
+			info = getinfo
+		} else {
+			info = lib.MapError
+		}
+	}
+
 	return info
 }
 

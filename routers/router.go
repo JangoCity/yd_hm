@@ -18,11 +18,13 @@ var FilterUser = func(ctx *context.Context) {
 		uid, ok := ctx.GetSecureCookie(beego.AppConfig.String("secertkey"), "uid")
 		fmt.Println("用户id---->" + uid)
 
-		if !ok && url != "/login/login" {
+		if url == "/"{
+			ctx.Redirect(200,"static/dist")
+		} else if !ok && url != "/login/login" {
 			ctx.Redirect(302, "/login/login")
 		} else if url != "/permission/getpermissionbyid" && url != "/login/login" {
 			//用户路由权限判断,除去静态文件判断
-			if !strings.Contains(url, "/static/picture") {
+			if !strings.Contains(url, beego.AppConfig.String("staticpath")) {
 				apilist, _ := ctx.GetSecureCookie(beego.AppConfig.String("secertkey"), "apipermissionbyid")
 				//fmt.Println(apilist)
 				b := strings.Contains(apilist, url) //路由权限判断
@@ -30,7 +32,7 @@ var FilterUser = func(ctx *context.Context) {
 					fmt.Println("uid---->" + uid + "====>" + url + "路由权限通过")
 				} else {
 					fmt.Println("uid---->" + uid + "====>" + url + "路由权限未通过")
-					ctx.Redirect(302, "/error")
+					ctx.Redirect(302, "/login/login")
 				}
 			}
 		}
