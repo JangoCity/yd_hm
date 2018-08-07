@@ -42,9 +42,12 @@ func (u *FileController) GetFilePath() {
 	u.ServeJSON()
 }
 
-//获得所有文件数据
-func (u *FileController) GetAllFile(){
-	ss := models.GetFile()
+//获得所有财务账单数据
+func (u *FileController) GetFinanceByPage(){
+	//isfinance := u.GetString("isfinance")
+	pageNum,_ := u.GetInt("pagenum")	//页码
+	num,_ := u.GetInt("num")	//每页数量
+	ss := models.GetFile(pageNum,num)
 	u.Data["json"] = ss
 	u.ServeJSON()
 }
@@ -55,8 +58,10 @@ func (u *FileController) CreateFile(){
 	path := u.filePath()
 	//获得文件描述
 	describe := u.GetString("describe")//预留
+	file_date := u.GetString("file_date")//预留
+	isfinance,_ := u.GetInt("isfinance")
 	//路径存储到数据库
-	n := models.UploadFile(path,describe)
+	n := models.UploadFile(path,file_date,describe,isfinance)
 	u.Data["json"]=map[string]int{"status":n}
 	u.ServeJSON()
 }
@@ -73,9 +78,10 @@ func (u *FileController) DeleteFileById(){
 func (u *FileController) UpdateFile(){
 	file_id := u.GetString("file_id")
 	file_address := u.filePath()
+	file_date := u.GetString("file_date")
 	//获得文件描述
 	describe := u.GetString("describe")//预留
-	n := models.UpdateFile(file_id,file_address,describe)
+	n := models.UpdateFile(file_id,file_address,file_date,describe)
 	u.Data["json"]=map[string]int64{"status":n}
 	u.ServeJSON()
 }

@@ -4176,3 +4176,1384 @@
 
 2018/07/31 19:31:39.137 [D] [server.go:2694] 192.168.31.233 - - [31/Jul/2018 07:31:39] "POST /browser-sync/socket.io/?EIO=3&transport=polling&t=MJm6w51 HTTP/1.1 302 0" 0.000587 http://192.168.31.173:3000/ Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
 
+2018/08/06 10:02:10.992 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 10:02:21.573 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:02:21] "GET /getJm HTTP/1.1 404 0" 0.000630  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:02:21.833 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:02:21] "GET /favicon.ico HTTP/1.1 302 0" 0.000296 http://127.0.0.1:8009/getJm Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:02:21.867 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:02:21] "GET /login/login HTTP/1.1 200 0" 0.000659 http://127.0.0.1:8009/getJm Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:04:55.654 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:04:55] "GET /login/login?jmusername=admin&jmuserpassword=admin123 HTTP/1.1 200 0" 0.018880  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:04:55.756 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:04:55] "GET /favicon.ico HTTP/1.1 302 0" 0.000335 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:04:55.760 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:04:55] "GET /login/login HTTP/1.1 200 0" 0.000616 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:05:08.853 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 10:05:08.853 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 10:05:08.853 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 10:05:08.853 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 10:05:08.854 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 10:05:08.854 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 10:05:08.854 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 10:05:08.854 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 10:05:08.854 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 10:05:08.854 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 10:05:08.854 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 10:05:08.854 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 10:05:08.854 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 10:05:08.854 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 10:05:08.854 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 10:05:09.066 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:05:09] "GET /favicon.ico HTTP/1.1 302 0" 0.000361 http://127.0.0.1:8009/file/createfile Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:05:09.084 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:05:09] "GET /login/login HTTP/1.1 200 0" 0.000714 http://127.0.0.1:8009/file/createfile Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:05:11.282 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 10:05:11.282 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 10:05:11.282 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 10:05:11.282 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 10:05:11.282 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 10:05:11.282 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 10:05:11.283 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 10:05:11.283 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 10:05:11.283 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 10:05:11.283 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 10:05:11.283 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 10:05:11.283 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 10:05:11.283 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 10:05:11.283 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 10:05:11.283 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 10:05:19.421 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 10:05:46.913 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 10:07:28.987 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 10:08:00.122 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 10:08:05.072 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 10:08:09.653 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:08:09] "POST /file/createfile HTTP/1.1 200 0" 0.001236  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:08:45.639 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:08:45] "POST /file/createfile HTTP/1.1 200 0" 0.006851  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:11:29.239 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 10:12:39.985 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 10:12:41.412 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:12:41] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001315  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:14:31.849 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:14:31] "POST /file/sd HTTP/1.1 404 0" 0.000910  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:15:13.626 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:15:13] "POST /file/sd HTTP/1.1 404 0" 0.001061  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:15:22.465 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:15:22] "POST /file/sd HTTP/1.1 404 0" 0.000530  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:15:28.580 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:15:28] "POST /file/sd HTTP/1.1 404 0" 0.000499  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:15:42.061 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:15:42] "POST /file/sd HTTP/1.1 404 0" 0.000582  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:15:51.075 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:15:51] "POST /file/update HTTP/1.1 404 0" 0.000527  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:16:06.638 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:16:06] "POST /file/update HTTP/1.1 404 0" 0.000768  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:16:10.870 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 10:16:20.894 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 10:16:20.895 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 10:16:26.060 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:16:26] "POST /file/updatefile HTTP/1.1 200 0" 0.008507  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:17:14.124 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:17:14] "POST /file/deletefilebyid HTTP/1.1 200 0" 0.014347  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 10:17:16.634 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 10:17:16] "POST /file/deletefilebyid HTTP/1.1 200 0" 0.001280  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 11:26:21.299 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 11:26:24.807 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:24] "GET /favicon.ico HTTP/1.1 302 0" 0.000686 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:24.875 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:24] "GET /login/login HTTP/1.1 200 0" 0.001870 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:31.737 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:31] "POST /login/login HTTP/1.1 200 0" 0.007472 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:31.789 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:31] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005155 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:32.441 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:32] "GET /favicon.ico HTTP/1.1 302 0" 0.000574 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:32.548 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:32] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005806 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:32.566 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:32] "GET /login/login HTTP/1.1 200 0" 0.001863 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:32.625 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:32] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.006203 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:43.200 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:43] "GET /favicon.ico HTTP/1.1 302 0" 0.000603 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:43.262 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:43] "POST /role/getrole HTTP/1.1 200 0" 0.000937 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:43.275 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:43] "GET /login/login HTTP/1.1 200 0" 0.001964 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:48.927 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:48] "GET /favicon.ico HTTP/1.1 302 0" 0.000490 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:48.981 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:48] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002277 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:49.000 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:48] "GET /login/login HTTP/1.1 200 0" 0.000662 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:53.495 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 11:26:53.495 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 11:26:53.495 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:26:53.495 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 11:26:53.495 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 11:26:53.495 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 11:26:53.495 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 11:26:53.495 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 11:26:53.495 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:26:53.495 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 11:26:53.495 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 11:26:53.496 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 11:26:53.496 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 11:26:53.496 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 11:26:53.496 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 11:26:53.509 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 11:26:53.886 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:26:53] "POST / HTTP/1.1 200 0" 0.387593 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 11:26:53.976 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 11:29:14.852 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:29:14] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.003495 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:29:15.561 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:29:15] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001746 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:29:15.581 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:29:15] "GET /favicon.ico HTTP/1.1 302 0" 0.000837 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:29:15.672 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:29:15] "GET /login/login HTTP/1.1 200 0" 0.001713 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:29:27.036 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 11:29:27.036 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 11:29:27.036 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:29:27.036 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 11:29:27.036 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 11:29:27.036 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 11:29:27.036 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 11:29:27.037 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 11:29:27.037 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:29:27.037 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 11:29:27.037 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 11:29:27.037 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 11:29:27.037 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 11:29:27.037 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 11:29:27.037 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 11:29:27.042 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:29:27] "POST / HTTP/1.1 200 0" 0.004039 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:29:27.046 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 11:29:27.046 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 11:29:27.046 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:29:27.046 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 11:29:27.046 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 11:29:27.046 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 11:29:27.046 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 11:29:27.047 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 11:29:27.047 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:29:27.047 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 11:29:27.047 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 11:29:27.047 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 11:29:27.047 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 11:29:27.047 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 11:29:27.047 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 11:29:27.096 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 11:29:27.096 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 11:29:27.096 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:29:27.096 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 11:29:27.096 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 11:29:27.096 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 11:29:27.096 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 11:29:27.096 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 11:29:27.096 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:29:27.096 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 11:29:27.096 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 11:29:27.096 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 11:29:27.097 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 11:29:27.097 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 11:29:27.097 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 11:30:10.472 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:30:10] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004459 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:30:11.088 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:30:11] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001748 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:30:11.321 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:30:11] "GET /favicon.ico HTTP/1.1 302 0" 0.000452 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:30:11.339 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:30:11] "GET /login/login HTTP/1.1 200 0" 0.001795 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 11:30:18.644 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 11:30:18.669 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 11:30:18.670 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 11:30:18.670 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 11:30:19.082 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:30:18] "POST / HTTP/1.1 200 0" 0.413412 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 11:30:19.120 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 11:34:39.884 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:34:39] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006028 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:34:40.483 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:34:40] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.000925 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:34:41.102 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:34:41] "GET /favicon.ico HTTP/1.1 302 0" 0.000483 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:34:41.116 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:34:41] "GET /login/login HTTP/1.1 200 0" 0.001714 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:41:48.204 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:41:48] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006351 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:41:48.700 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:41:48] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001909 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:41:48.725 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:41:48] "GET /favicon.ico HTTP/1.1 302 0" 0.000688 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:41:48.988 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:41:48] "GET /login/login HTTP/1.1 200 0" 0.001120 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:41:56.482 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:41:56] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005699 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:41:56.573 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:41:56] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.000695 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:41:57.298 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:41:57] "GET /favicon.ico HTTP/1.1 302 0" 0.000244 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:41:57.332 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:41:57] "GET /login/login HTTP/1.1 200 0" 0.001184 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:42:16.530 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:42:16] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005260 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:42:17.174 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:42:17] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001736 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:42:17.175 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:42:17] "GET /favicon.ico HTTP/1.1 302 0" 0.000576 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:42:17.269 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:42:17] "GET /login/login HTTP/1.1 200 0" 0.001714 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:42:25.152 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 11:42:25.152 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 11:42:25.152 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:42:25.153 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 11:42:25.153 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 11:42:25.153 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 11:42:25.153 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 11:42:25.153 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 11:42:25.153 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:42:25.153 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 11:42:25.153 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 11:42:25.153 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 11:42:25.153 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 11:42:25.153 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 11:42:25.153 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 11:43:56.898 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:43:56] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005738 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:43:57.510 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:43:57] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001712 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:43:57.646 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:43:57] "GET /favicon.ico HTTP/1.1 302 0" 0.000663 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:43:57.742 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:43:57] "GET /login/login HTTP/1.1 200 0" 0.001175 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] the request url is  /file/createfile
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:58
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 11:44:00.991 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 11:45:40.424 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:45:40] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006637 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:45:41.237 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:45:41] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001687 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:45:41.243 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:45:41] "GET /favicon.ico HTTP/1.1 302 0" 0.000573 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:45:41.290 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:45:41] "GET /login/login HTTP/1.1 200 0" 0.001755 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:46:01.822 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:46:01] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004077 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:46:02.443 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:46:02] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001737 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:46:02.469 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:46:02] "GET /favicon.ico HTTP/1.1 302 0" 0.000587 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:46:02.755 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:46:02] "GET /login/login HTTP/1.1 200 0" 0.001749 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:46:09.709 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:46:09] "POST /file/createfile HTTP/1.1 200 0" 0.007417 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:46:45.956 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:46:45] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006003 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:46:46.566 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:46:46] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001582 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:46:49.644 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:46:49] "GET /favicon.ico HTTP/1.1 302 0" 0.000296 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:46:49.721 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:46:49] "GET /login/login HTTP/1.1 200 0" 0.000726 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:47:48.842 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:47:48] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.002413 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:47:49.541 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:47:49] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001202 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:47:49.586 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:47:49] "GET /favicon.ico HTTP/1.1 302 0" 0.000430 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:47:49.625 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:47:49] "GET /login/login HTTP/1.1 200 0" 0.001638 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:49:31.020 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 11:50:11.276 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:50:11] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006685 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:50:11.767 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:50:11] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001910 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:50:12.077 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:50:12] "GET /favicon.ico HTTP/1.1 302 0" 0.000713 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:50:12.115 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:50:12] "GET /login/login HTTP/1.1 200 0" 0.000883 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:53:08.411 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:53:08] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005949 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:53:08.714 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:53:08] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.000928 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:53:09.120 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:53:09] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.000741 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:53:09.194 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:53:09] "GET /favicon.ico HTTP/1.1 302 0" 0.000257 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:53:09.251 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:53:09] "GET /login/login HTTP/1.1 200 0" 0.000791 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:53:24.178 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:53:24] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005969 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:53:24.329 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:53:24] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001855 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:53:24.662 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:53:24] "GET /favicon.ico HTTP/1.1 302 0" 0.000371 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:53:24.699 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:53:24] "GET /login/login HTTP/1.1 200 0" 0.001213 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:54:29.615 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:54:29] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006016 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:54:30.118 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:54:30] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001815 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:54:30.120 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:54:30] "GET /favicon.ico HTTP/1.1 302 0" 0.000620 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:54:30.196 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:54:30] "GET /login/login HTTP/1.1 200 0" 0.001874 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:55:38.818 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:55:38] "POST /file/createfile HTTP/1.1 200 0" 0.707834 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:56:04.124 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:56:04] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005909 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:56:04.646 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:56:04] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001976 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:56:04.650 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:56:04] "GET /favicon.ico HTTP/1.1 302 0" 0.000591 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:56:04.711 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:56:04] "GET /login/login HTTP/1.1 200 0" 0.001654 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:56:08.264 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:56:07] "POST /file/createfile HTTP/1.1 200 0" 0.350389 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:56:27.984 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:56:27] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006264 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:56:28.389 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:56:28] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001974 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:56:28.601 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:56:28] "GET /favicon.ico HTTP/1.1 302 0" 0.000760 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:56:28.632 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:56:28] "GET /login/login HTTP/1.1 200 0" 0.001184 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:56:33.007 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:56:32] "POST /file/createfile HTTP/1.1 200 0" 0.014698 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:57:40.589 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:57:40] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.012208 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:57:41.192 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:57:41] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001988 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:57:41.193 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:57:41] "GET /favicon.ico HTTP/1.1 302 0" 0.000630 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:57:41.258 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:57:41] "GET /login/login HTTP/1.1 200 0" 0.001748 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:57:45.586 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:57:45] "POST /file/createfile HTTP/1.1 200 0" 0.402184 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:58:02.391 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:58:02] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006094 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:58:02.819 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:58:02] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002010 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:58:03.000 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:58:02] "GET /favicon.ico HTTP/1.1 302 0" 0.000610 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:58:03.018 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:58:03] "GET /login/login HTTP/1.1 200 0" 0.000709 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:58:07.567 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:58:06] "POST /file/createfile HTTP/1.1 200 0" 0.770542 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:58:11.147 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:58:11] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002054 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:58:24.307 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:58:24] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006016 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:58:24.461 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:58:24] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002191 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:58:24.816 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:58:24] "GET /favicon.ico HTTP/1.1 302 0" 0.000620 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:58:24.842 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:58:24] "GET /login/login HTTP/1.1 200 0" 0.001653 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:58:28.575 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:58:28] "POST /file/createfile HTTP/1.1 200 0" 0.383401 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:58:28.615 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:58:28] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002208 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:59:59.432 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:59:59] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006044 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 11:59:59.734 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 11:59:59] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.000910 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:00:00.250 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:00:00] "GET /favicon.ico HTTP/1.1 302 0" 0.000574 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:00:00.280 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:00:00] "GET /login/login HTTP/1.1 200 0" 0.002106 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:00:39.990 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:00:39] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.012174 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:00:43.159 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:00:43] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002170 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:00:43.160 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:00:43] "GET /favicon.ico HTTP/1.1 302 0" 0.000631 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:00:43.319 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:00:43] "GET /login/login HTTP/1.1 200 0" 0.001704 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:01:24.832 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:01:24] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006572 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:01:25.447 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:01:25] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001625 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:01:25.457 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:01:25] "GET /favicon.ico HTTP/1.1 302 0" 0.000397 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:01:25.636 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:01:25] "GET /login/login HTTP/1.1 200 0" 0.000728 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:01:35.692 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:01:35] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005021 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:01:36.095 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:01:36] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002641 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:01:36.114 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:01:36] "GET /favicon.ico HTTP/1.1 302 0" 0.000471 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:01:36.401 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:01:36] "GET /login/login HTTP/1.1 200 0" 0.001026 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:02:09.273 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:02:09] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006008 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:02:09.891 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:02:09] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001394 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:02:09.929 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:02:09] "GET /favicon.ico HTTP/1.1 302 0" 0.000469 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:02:10.299 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:02:10] "GET /login/login HTTP/1.1 200 0" 0.000951 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:02:32.007 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:02:32] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005321 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:02:32.522 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:02:32] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001953 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:02:32.526 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:02:32] "GET /favicon.ico HTTP/1.1 302 0" 0.000282 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:02:32.933 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:02:32] "GET /login/login HTTP/1.1 200 0" 0.000662 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:02:36.211 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:02:36] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005872 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:02:36.717 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:02:36] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002915 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:02:36.732 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:02:36] "GET /favicon.ico HTTP/1.1 302 0" 0.000565 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:02:36.772 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:02:36] "GET /login/login HTTP/1.1 200 0" 0.001713 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:03:38.136 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:03:37] "POST /file/createfile HTTP/1.1 200 0" 0.389149 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:03:38.173 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:03:38] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001986 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:03:42.053 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:03:41] "POST /file/createfile HTTP/1.1 200 0" 0.341247 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:03:42.090 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:03:42] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.000916 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:03:54.270 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:03:52] "POST /file/createfile HTTP/1.1 200 0" 1.784728 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:03:54.310 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:03:54] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002271 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:04:03.167 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:04:02] "POST /file/createfile HTTP/1.1 200 0" 0.337315 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:04:03.195 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:04:03] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002469 http://192.168.31.173:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:06:51.039 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 12:14:27.873 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 12:14:27] "GET /login/login?jmusername=admin&jmuserpassword=admin123 HTTP/1.1 200 0" 0.004555  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 12:14:28.141 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 12:14:28] "GET /favicon.ico HTTP/1.1 302 0" 0.000464 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 12:14:28.150 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 12:14:28] "GET /login/login HTTP/1.1 200 0" 0.000678 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 12:26:51.744 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:26:51] "POST /login/login HTTP/1.1 200 0" 0.001787 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:27:00.804 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:27:00] "POST /login/login HTTP/1.1 200 0" 0.005848 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:27:00.830 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:27:00] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005276 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:27:01.703 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:27:01] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005323 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:27:01.763 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:27:01] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.003250 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:27:25.739 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:27:25] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002244 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:27:50.838 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:27:50] "POST /file/createfile HTTP/1.1 200 0" 0.009090 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:27:50.869 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:27:50] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001403 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:28:53.196 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:28:53] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004254 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:28:53.864 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:28:53] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001142 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:33:04.279 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:33:04] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006239 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:33:04.787 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:33:04] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001810 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:36:08.972 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 12:36:11.507 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:36:11] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005668 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:36:12.386 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:36:12] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001453 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:36:21.407 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:36:21] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006463 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:36:21.555 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:36:21] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.000703 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:37:08.593 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 12:37:18.654 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:37:18] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.003072 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:37:19.674 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:37:19] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003904 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:37:27.733 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:37:27] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001067 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:37:39.020 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:37:39] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001346 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:37:42.812 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:37:42] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002777 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:40:35.455 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:40:35] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006503 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:40:36.206 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:40:36] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003062 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:40:39.444 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:40:39] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002780 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:40:41.275 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:40:41] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002945 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:40:42.013 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:40:42] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002693 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:40:51.658 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:40:51] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006357 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:40:52.249 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:40:52] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.004213 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:40:57.060 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:40:57] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002848 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:41:29.319 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:41:29] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006300 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:41:30.136 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:41:30] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002795 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:42:42.535 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:42:42] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006006 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:42:42.565 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:42:42] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003199 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:42:45.704 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:42:45] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002651 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 12:42:48.367 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 12:42:48] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002800 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:41:53.898 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:41:53] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004982 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:41:54.103 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:41:54] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003367 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:42:14.553 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:42:14] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005744 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:42:15.147 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:42:15] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002825 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:42:32.858 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:42:32] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005501 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:42:33.471 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:42:33] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002319 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:43:05.226 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:43:05] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005984 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:43:05.321 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:43:05] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002284 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:43:27.536 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:43:27] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.002560 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:43:28.158 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:43:28] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002166 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:43:56.109 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:43:56] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004356 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:43:56.723 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:43:56] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002950 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:44:33.390 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:44:33] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.011783 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:44:33.449 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:44:33] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003400 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:44:45.676 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:44:45] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006103 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:44:45.977 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:44:45] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002167 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:44:56.531 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:44:56] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004692 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:44:56.827 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:44:56] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001987 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:45:00.413 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:45:00] "POST /file/deletefile HTTP/1.1 404 0" 0.000627 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:45:44.036 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:45:44] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005944 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:45:44.652 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:45:44] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003024 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:45:46.693 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:45:46] "POST /file/deletefile HTTP/1.1 404 0" 0.000455 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:46:51.931 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:46:51] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006387 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:46:52.744 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:46:52] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001302 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:47:05.754 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:47:05] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005361 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:47:06.036 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:47:06] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002941 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:47:08.515 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:47:08] "POST /file/deletefilebyid HTTP/1.1 200 0" 0.004245 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:47:21.917 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:47:21] "POST /file/deletefilebyid HTTP/1.1 200 0" 0.008233 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:48:02.085 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:48:02] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004514 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:48:02.586 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:48:02] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001402 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:48:29.830 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:48:29] "POST /file/deletefilebyid HTTP/1.1 200 0" 0.007795 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:48:50.616 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:48:50] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.009501 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:48:50.914 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:48:50] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001170 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:49:15.381 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 13:49:25.644 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:49:25] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.007130 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:49:26.036 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:49:26] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002367 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:49:28.496 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:49:28] "POST /file/deletefilebyid HTTP/1.1 200 0" 0.008074 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:49:28.535 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:49:28] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003289 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:54:25.763 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:54:25] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006267 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:54:26.170 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:54:26] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005655 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:54:44.194 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:54:44] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004823 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:54:44.807 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:54:44] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.003903 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:54:59.353 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:54:59] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005342 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:55:02.335 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:55:02] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.002630 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:55:17.268 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:55:17] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006224 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:55:18.042 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:55:18] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006448 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:55:34.275 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:55:34] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.007419 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:55:34.457 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:55:34] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005997 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:55:44.730 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:55:44] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.003243 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:55:45.340 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:55:45] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006027 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:56:06.012 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:56:06] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.003904 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:56:06.366 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:56:06] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.002782 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:56:18.192 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:56:18] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006103 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:56:19.797 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:56:19] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004013 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:56:30.593 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:56:30] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005070 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:56:30.810 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:56:30] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004175 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:56:42.560 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:56:42] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006244 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:56:43.069 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:56:43] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003086 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:56:55.255 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:56:55] "POST /file/createfile HTTP/1.1 200 0" 0.003186 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:56:55.301 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:56:55] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001771 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:57:00.283 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:57:00] "POST /file/createfile HTTP/1.1 200 0" 0.009325 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:57:00.317 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:57:00] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001489 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:57:03.762 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:57:03] "POST /file/createfile HTTP/1.1 200 0" 0.003294 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:57:03.799 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:57:03] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002877 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:57:06.106 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:57:06] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002011 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:57:07.422 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:57:07] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003010 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:57:10.283 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:57:10] "POST /file/deletefilebyid HTTP/1.1 200 0" 0.009001 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:57:10.315 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:57:10] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002947 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:57:16.347 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:57:16] "POST /file/createfile HTTP/1.1 200 0" 0.004148 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:57:16.377 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 01:57:16] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002961 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 13:57:22.720 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 13:57:22.720 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 13:57:22.720 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 13:57:22.720 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 13:57:22.720 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 13:57:22.720 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 13:57:22.720 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 13:57:22.720 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 13:57:22.720 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 13:57:22.720 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 13:57:22.720 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 13:57:22.721 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 13:57:22.721 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 13:57:22.721 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 13:57:22.721 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 14:00:02.347 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:00:02] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005525 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:00:03.243 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:00:03] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002943 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:00:12.573 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 14:00:12.573 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 14:00:12.573 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:00:12.573 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 14:00:12.574 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 14:00:12.574 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 14:00:12.574 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 14:00:12.574 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 14:00:12.574 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:00:12.574 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 14:00:12.574 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 14:00:12.574 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 14:00:12.574 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 14:00:12.574 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 14:00:12.574 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 14:00:19.570 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 14:00:19.571 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 14:00:19.571 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 14:00:41.548 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 14:00:54.646 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 14:00:54.647 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 14:01:00.193 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:01:00] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005834 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:01:00.511 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:01:00] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003513 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:01:04.940 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:01:04] "POST /file/createfile HTTP/1.1 200 0" 0.660819 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:01:04.975 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:01:04] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001921 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:01:08.579 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:01:08] "POST /file/createfile HTTP/1.1 200 0" 0.007465 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:01:08.619 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:01:08] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002214 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:01:14.008 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:01:14] "POST /file/deletefilebyid HTTP/1.1 200 0" 0.007819 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:01:14.051 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:01:14] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001321 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 14:01:17.797 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 14:02:53.841 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 14:03:39.606 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 14:03:39.606 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 14:03:39.606 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:03:39.606 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 14:03:39.606 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 14:03:39.606 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 14:03:39.606 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 14:03:39.606 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 14:03:39.607 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:03:39.607 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 14:03:39.607 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 14:03:39.607 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 14:03:39.607 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 14:03:39.607 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 14:03:39.607 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 14:03:45.654 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:03:45] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006429 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:03:57.938 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:03:57] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001844 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:04:01.521 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:04:01] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005538 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:04:02.036 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:04:02] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003002 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:04:04.900 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 14:04:04.900 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 14:04:04.900 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:04:04.900 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 14:04:04.900 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 14:04:04.900 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 14:04:04.900 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 14:04:04.900 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 14:04:04.900 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:04:04.900 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 14:04:04.900 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 14:04:04.900 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 14:04:04.901 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 14:04:04.901 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 14:04:04.901 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 14:05:01.730 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:05:01] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005505 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:02.138 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:05:02] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002994 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:05.819 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 14:05:05.820 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 14:05:25.629 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:05:25] "GET /favicon.ico HTTP/1.1 302 0" 0.000752 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:25.668 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:05:25] "GET /news/getnewsbypage?pagenum=1&num=10 HTTP/1.1 200 0" 0.005093 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:25.726 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:05:25] "GET /login/login HTTP/1.1 200 0" 0.001706 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:29.892 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:05:29] "GET /news/getnewsbyid?id=133 HTTP/1.1 200 0" 0.002145 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:30.240 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:05:30] "GET /static/picture/20180731171219.jpg HTTP/1.1 200 0" 0.029681 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:34.808 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:05:34] "GET /news/getnewsbypage?pagenum=1&num=10 HTTP/1.1 200 0" 0.004421 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:34.808 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:05:34] "GET /favicon.ico HTTP/1.1 302 0" 0.000620 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:34.833 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:05:34] "GET /login/login HTTP/1.1 200 0" 0.001323 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:36.806 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:05:36] "GET /news/getnewsbypage?pagenum=2&num=10 HTTP/1.1 200 0" 0.004978 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:38.181 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:05:38] "GET /news/getnewsbypage?pagenum=3&num=10 HTTP/1.1 200 0" 0.004255 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:40.334 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:05:40] "GET /news/getnewsbyid?id=109 HTTP/1.1 200 0" 0.002315 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:53.254 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:05:53] "OPTIONS /file/getfilepath HTTP/1.1 200 0" 0.000495  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:05:54.027 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:05:53] "POST /file/getfilepath HTTP/1.1 200 0" 0.471088 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:06:01.631 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:06:01] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002945 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:08:13.940 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 14:08:15.054 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:08:15] "POST /role/getrole HTTP/1.1 200 0" 0.001989 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:08:15.570 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:08:15] "GET /jmuser/getjmuser HTTP/1.1 200 0" 0.005034 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:08:18.345 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:08:18] "POST /role/getrole HTTP/1.1 200 0" 0.000891 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:08:18.656 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:08:18] "GET /jmuser/getjmuserbyid?id=1 HTTP/1.1 200 0" 0.003696 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:08:19.646 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:08:19] "GET /favicon.ico HTTP/1.1 302 0" 0.000679 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:08:19.672 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:08:19] "GET /login/login HTTP/1.1 200 0" 0.001922 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:08:25.549 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:08:25] "POST /file/updatefile HTTP/1.1 200 0" 0.002155  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 14:08:32.467 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:08:32] "GET /favicon.ico HTTP/1.1 302 0" 0.000681 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:08:32.802 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:08:32] "GET /login/login HTTP/1.1 200 0" 0.001046 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:08:35.636 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:08:35] "GET /favicon.ico HTTP/1.1 302 0" 0.000333 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:08:35.653 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:08:35] "GET /login/login HTTP/1.1 200 0" 0.000857 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:08:57.589 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:08:57] "POST /file/updatefile HTTP/1.1 200 0" 0.007300  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 14:09:14.955 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:09:14] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003162 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:09:18.950 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 14:09:18.950 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 14:09:18.950 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:09:18.950 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 14:09:18.950 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 14:09:18.950 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 14:09:18.950 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 14:09:18.950 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 14:09:18.950 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:09:18.950 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 14:09:18.950 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 14:09:18.951 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 14:09:18.951 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 14:09:18.951 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 14:09:18.951 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 14:09:51.115 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:09:51] "GET /jmuser/getjmuser HTTP/1.1 200 0" 0.003769 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:09:51.176 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:09:51] "POST /file/updatefile HTTP/1.1 200 0" 0.008012  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/06 14:09:52.951 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:09:52] "POST /role/getrole HTTP/1.1 200 0" 0.001354 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:09:57.659 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:09:57] "GET /favicon.ico HTTP/1.1 302 0" 0.000709 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:09:57.683 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:09:57] "GET /login/login HTTP/1.1 200 0" 0.001666 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:10:34.624 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:10:34] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.010761 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:10:35.334 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:10:35] "POST /role/getrole HTTP/1.1 200 0" 0.001416 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:10:48.054 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:10:48] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004560 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:10:48.505 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:10:48] "POST /role/getrole HTTP/1.1 200 0" 0.000788 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:11:11.486 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:11:11] "GET /jmuser/getjmuser HTTP/1.1 200 0" 0.007008 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:11:11.505 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:11:11] "GET /favicon.ico HTTP/1.1 302 0" 0.000497 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:11:11.630 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:11:11] "GET /login/login HTTP/1.1 200 0" 0.001882 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:11:13.632 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:11:13] "POST /role/getrole HTTP/1.1 200 0" 0.001358 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:11:13.695 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:11:13] "GET /jmuser/getjmuserbyid?id=1 HTTP/1.1 200 0" 0.003663 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:11:58.791 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:11:58] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.002893 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:11:59.200 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:11:59] "POST /role/getrole HTTP/1.1 200 0" 0.000871 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:11:59.615 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:11:59] "GET /jmuser/getjmuserbyid?id=1 HTTP/1.1 200 0" 0.003238 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:12:06.475 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:12:06] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.006027 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:12:34.427 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:12:34] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001273 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:12:39.648 [C] [asm_amd64.s:573] the request url is  /file/updatefile
+2018/08/06 14:12:39.648 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:63
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/signal_unix.go:388
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:27
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:80
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/06 14:12:39.649 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/06 14:13:27.275 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 14:13:33.936 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:13:33] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.007736 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:13:34.097 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:13:34] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002312 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:13:53.018 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 14:14:01.581 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:14:01] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006873 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:14:02.181 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:14:02] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001602 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:14:41.167 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 14:17:19.290 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 14:17:21.253 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:21] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.007265 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:21.732 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:21] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001989 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:27.528 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:25] "POST /file/updatefile HTTP/1.1 200 0" 2.093140 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:27.626 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:27] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001514 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:36.511 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:36] "POST /file/updatefile HTTP/1.1 200 0" 0.015214 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:36.578 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:36] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.001170 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:42.748 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:42] "POST /product/getproductbypage HTTP/1.1 200 0" 0.004094 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:42.937 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:42] "GET /static/picture/20180725100520.png HTTP/1.1 304 0" 0.000404 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:42.991 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:42] "GET /static/picture/20180724215458.jpg HTTP/1.1 304 0" 0.000462 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:43.202 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:42] "GET /static/picture/20180725100057.png HTTP/1.1 200 0" 0.301426 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:45.507 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:45] "POST /product/getproductbypage HTTP/1.1 200 0" 0.003518 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:46.065 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:45] "GET /static/picture/20180724214245.jpg HTTP/1.1 200 0" 0.443589 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:48.429 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:48] "GET /product/getproductbyid?id=59 HTTP/1.1 200 0" 0.001867 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:17:57.697 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:57] "OPTIONS /file/getfilepath HTTP/1.1 200 0" 0.000528  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:18:01.043 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:17:57] "POST /file/getfilepath HTTP/1.1 200 0" 3.321016 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:18:03.534 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:18:03] "POST /product/updateproduct HTTP/1.1 200 0" 0.007682 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:18:04.391 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:18:04] "POST /product/getproductbypage HTTP/1.1 200 0" 0.011765 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:18:27.692 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:18:27] "POST /role/getrole HTTP/1.1 200 0" 0.001460 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:18:50.850 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:18:50] "POST /jmuser/createjmuser HTTP/1.1 200 0" 0.015798 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:18:52.792 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:18:52] "GET /jmuser/getjmuser HTTP/1.1 200 0" 0.009633 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:18:52.817 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:18:52] "GET /favicon.ico HTTP/1.1 302 0" 0.000668 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:18:52.859 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:18:52] "GET /login/login HTTP/1.1 200 0" 0.002177 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:18:58.517 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:18:58] "POST /role/getrole HTTP/1.1 200 0" 0.000728 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:18:58.570 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:18:58] "GET /jmuser/getjmuserbyid?id=19 HTTP/1.1 200 0" 0.003324 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:19:04.154 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:19:04] "POST /jmuser/updatejmuserbyid HTTP/1.1 200 0" 0.008418 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:19:15.417 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:19:15] "POST /jmuser/updatejmuserbyid HTTP/1.1 200 0" 0.007196 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:19:36.188 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:19:36] "POST /login/login HTTP/1.1 200 0" 0.003886 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:19:36.442 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:19:36] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.003276 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:19:37.226 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:19:37] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.005405 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:19:37.226 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:19:37] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005932 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:19:46.744 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:19:46] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.001515 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:19:49.103 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:19:49] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002950 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:19:50.639 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:19:50] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.002732 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:20:03.648 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:20:03] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.008190 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:20:09.352 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:20:08] "POST /file/updatefile HTTP/1.1 200 0" 1.017502 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:20:09.421 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:20:09] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002886 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:20:12.138 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:20:12] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.001574 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:20:14.493 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:20:14] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.003581 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:20:29.664 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:20:29] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.002357 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:20:29.664 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:20:29] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.003430 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:23:56.774 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:23:32] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 24.747318 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:23:56.782 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:23:35] "POST /summary/getsummarybypage HTTP/1.1 200 0" 20.939119 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:24:16.976 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 14:24:23.538 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:24:23] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006684 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:24:24.043 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:24:24] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.004308 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:25:51.035 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 14:25:54.787 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:25:54] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006062 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:25:55.291 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:25:55] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.006903 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:25:59.586 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:25:59] "POST /summary/getsummarybyid HTTP/1.1 200 0" 0.002386 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:26:06.338 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:26:06] "POST /summary/updatesummary HTTP/1.1 302 0" 0.001405 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:26:06.361 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:26:06] "GET /login/login HTTP/1.1 200 0" 0.001747 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:26:20.168 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:26:20] "POST /summary/updatesummary HTTP/1.1 302 0" 0.001223 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:26:20.199 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:26:20] "GET /login/login HTTP/1.1 200 0" 0.000780 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:26:48.424 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:26:48] "POST /login/login HTTP/1.1 200 0" 0.002879 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:26:48.467 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:26:48] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005046 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:26:49.347 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:26:49] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004854 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:26:49.353 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:26:49] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.004926 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:26:54.163 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:26:54] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.004497 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:27:32.254 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:27:32] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005343 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:27:32.560 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:27:32] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.006157 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:27:35.317 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:27:35] "POST /summary/getsummarybyid HTTP/1.1 200 0" 0.002075 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:27:36.965 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:27:36] "POST /summary/updatesummary HTTP/1.1 200 0" 0.007624 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:27:41.475 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:27:41] "POST /summary/updatesummary HTTP/1.1 200 0" 0.006899 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:31:46.820 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:31:46] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.002358 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:31:48.360 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:31:48] "POST /summary/getsummarybyid HTTP/1.1 200 0" 0.002168 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:33:31.374 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:33:31] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004878 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:33:48.995 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:33:48] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.008001 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:34:20.629 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:34:20] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004828 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:34:38.452 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:34:38] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.005954 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:35:16.853 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:35:16] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005002 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:35:17.369 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:35:17] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.006407 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:35:32.630 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:35:32] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.006135 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:35:47.574 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:35:47] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005178 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:35:48.195 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:35:48] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.006009 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:36:00.587 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:36:00] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.013722 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:36:00.989 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:36:00] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.006450 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:36:06.515 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:36:06] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005079 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:36:07.031 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:36:07] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.005643 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:36:15.020 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:36:15] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.003265 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:36:15.531 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:36:15] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.006054 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:37:37.353 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:37:37] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005141 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:37:41.350 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:37:41] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005115 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:37:41.445 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:37:41] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.005975 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:38:35.107 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:38:35] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.009245 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:38:35.616 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:38:35] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.006147 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:38:41.450 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:38:41] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004945 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:38:42.074 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:38:42] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.006071 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:38:52.306 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:38:52] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.005882 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:38:54.461 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:38:54] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003129 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:39:05.827 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:39:05] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004789 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:39:06.242 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:39:06] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.003087 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:39:08.897 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:39:08] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.005560 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:40:31.532 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:40:31] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005130 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:40:31.785 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:40:31] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005115 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:40:31.808 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:40:31] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.004320 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:43:11.790 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:43:11] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.002881 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:43:12.200 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:43:12] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.005787 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:43:19.775 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:43:19] "POST /file/getfinancebypage HTTP/1.1 200 0" 0.002011 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:43:55.721 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:43:55] "POST /login/login HTTP/1.1 200 0" 0.007148 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:43:55.772 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:43:55] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.006326 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:43:56.513 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:43:56] "POST /permission/getpermissionbyid HTTP/1.1 200 0" 0.005525 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:43:56.590 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:43:56] "POST /summary/getsummarybypage HTTP/1.1 200 0" 0.005821 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:44:05.247 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:44:05] "GET /jmuser/getjmuser HTTP/1.1 200 0" 0.010239 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:44:05.260 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:44:05] "GET /favicon.ico HTTP/1.1 302 0" 0.000459 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:44:05.681 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:44:05] "GET /login/login HTTP/1.1 200 0" 0.001666 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:44:08.318 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:44:08] "GET /news/getnewsbypage?pagenum=1&num=10 HTTP/1.1 200 0" 0.002153 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:44:08.335 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:44:08] "GET /favicon.ico HTTP/1.1 302 0" 0.000274 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:44:08.445 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:44:08] "GET /login/login HTTP/1.1 200 0" 0.001838 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:44:10.268 [D] [server.go:2694] 192.168.31.173 - - [06/Aug/2018 02:44:10] "POST /product/getproductbypage HTTP/1.1 200 0" 0.011971 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:48:42.142 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/06 14:53:59.061 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:53:59] "GET /favicon.ico HTTP/1.1 302 0" 0.000698 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:53:59.105 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:53:59] "GET /login/login HTTP/1.1 200 0" 0.002107 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:54:00.859 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:54:00] "GET /favicon.ico HTTP/1.1 302 0" 0.000313 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:54:00.903 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:54:00] "GET /login/login HTTP/1.1 200 0" 0.000692 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:54:03.776 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:54:03] "GET /favicon.ico HTTP/1.1 302 0" 0.000522 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:54:03.834 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:54:03] "GET /login/login HTTP/1.1 200 0" 0.001745 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:54:05.001 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:54:05] "GET /favicon.ico HTTP/1.1 302 0" 0.000241 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:54:05.018 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:54:05] "GET /login/login HTTP/1.1 200 0" 0.001013 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:54:54.150 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:54:54] "GET /favicon.ico HTTP/1.1 302 0" 0.000726 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:54:54.167 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:54:54] "GET /login/login HTTP/1.1 200 0" 0.001275 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:55:24.071 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:55:24] "GET /favicon.ico HTTP/1.1 302 0" 0.000364 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:55:24.132 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:55:24] "GET /login/login HTTP/1.1 200 0" 0.000837 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:55:50.175 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:55:50] "GET /favicon.ico HTTP/1.1 302 0" 0.001856 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:55:50.196 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:55:50] "GET /login/login HTTP/1.1 200 0" 0.000692 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:56:56.831 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:56:56] "GET /favicon.ico HTTP/1.1 302 0" 0.000267 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:56:56.857 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:56:56] "GET /login/login HTTP/1.1 200 0" 0.000799 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:57:03.281 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:57:03] "GET /favicon.ico HTTP/1.1 302 0" 0.000665 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:57:03.309 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:57:03] "GET /login/login HTTP/1.1 200 0" 0.000776 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:58:12.197 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:58:12] "GET /favicon.ico HTTP/1.1 302 0" 0.000337 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 14:58:12.282 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 02:58:12] "GET /login/login HTTP/1.1 200 0" 0.001115 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 15:01:02.381 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 03:01:02] "GET /favicon.ico HTTP/1.1 302 0" 0.000606 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 15:01:02.804 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 03:01:02] "GET /login/login HTTP/1.1 200 0" 0.001069 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 15:01:37.609 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 03:01:37] "GET /favicon.ico HTTP/1.1 302 0" 0.000590 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 15:01:37.648 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 03:01:37] "GET /login/login HTTP/1.1 200 0" 0.001778 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 15:01:42.249 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 03:01:42] "GET /favicon.ico HTTP/1.1 302 0" 0.000568 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+2018/08/06 15:01:42.320 [D] [server.go:2694] 127.0.0.1 - - [06/Aug/2018 03:01:42] "GET /login/login HTTP/1.1 200 0" 0.001809 http://localhost:3000/ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+

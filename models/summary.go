@@ -47,7 +47,8 @@ func GetSummaryByPage(uid string, clientPage, everyPage int) interface{} {
 	if num2 > 0{
 		role_id = maps[0]["role_id"].(string)
 	}
-	if role_id == "1"{
+	/*超级管理员或是财务*/
+	if role_id == "1" || role_id == "4"{
 		num2, err = o.Raw("SELECT count(id) as num FROM `summary`").Values(&maps)
 		//有数据是返回相应信息
 		if err == nil && num2 > 0 {
