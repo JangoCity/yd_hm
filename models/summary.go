@@ -9,6 +9,8 @@ import (
 type Summary struct {
 	Id                  int
 	Name				string
+	Jmuser_id			string	//
+	Jm_name				string	//用户名
 	Income				string	//要测试是否能超过255个字符
 	Outcome				string
 	Flow				string
@@ -22,9 +24,14 @@ func GetSummaryById(id int) interface{} {
 
 	var summary []Summary
 	var getinfo lib.GetInfo
+	var maps []orm.Params
 	num2 ,err := o.Raw("select *from `summary` where id=?", id).QueryRows(&summary)
 	//有数据是返回相应信息
 	if err == nil && num2 > 0 {
+		num,_:= o.Raw("select jm_name from `jmuser` where id=?",summary[0].Jmuser_id).Values(&maps)
+		if num > 0 {
+			summary[0].Jm_name = maps[0]["jm_name"].(string)
+		}
 		getinfo.Status = 200
 		getinfo.Msg = "请求成功"
 		getinfo.Data = summary //数据
@@ -52,12 +59,21 @@ func GetSummaryByPage(uid string, clientPage, everyPage int) interface{} {
 		num2, err = o.Raw("SELECT count(id) as num FROM `summary`").Values(&maps)
 		//有数据是返回相应信息
 		if err == nil && num2 > 0 {
-			var summary []Summary
-			var getinfo lib.GetInfo
-			o.Raw("select *from `summary` order by id desc limit ?,?", (clientPage-1)*everyPage, everyPage).QueryRows(&summary)
 			//统计页码等状态
 			var SumPage = "0"
 			SumPage = maps[0]["num"].(string)
+
+			var summary []Summary
+			var getinfo lib.GetInfo
+			num,_:=o.Raw("select *from `summary` order by id desc limit ?,?", (clientPage-1)*everyPage, everyPage).QueryRows(&summary)
+			if num > 0{
+				for k,v := range summary{
+					num,_:= o.Raw("select jm_name from `jmuser` where id=?",v.Jmuser_id).Values(&maps)
+					if num > 0 {
+						summary[k].Jm_name = maps[0]["jm_name"].(string)
+					}
+				}
+			}
 
 			getinfo.Status = 200
 			getinfo.Msg = "请求成功"
@@ -76,10 +92,19 @@ func GetSummaryByPage(uid string, clientPage, everyPage int) interface{} {
 		if err == nil && num2 > 0 {
 			var summary []Summary
 			var getinfo lib.GetInfo
-			o.Raw("select *from `summary` where jmuser_id=? order by id desc limit ?,?",uid, (clientPage-1)*everyPage, everyPage).QueryRows(&summary)
+			num,_:= o.Raw("select *from `summary` where jmuser_id=? order by id desc limit ?,?",uid, (clientPage-1)*everyPage, everyPage).QueryRows(&summary)
 			//统计页码等状态
 			var SumPage = "0"
 			SumPage = maps[0]["num"].(string)
+
+			if num > 0{
+				for k,v := range summary{
+					num,_:= o.Raw("select jm_name from `jmuser` where id=?",v.Jmuser_id).Values(&maps)
+					if num > 0 {
+						summary[k].Jm_name = maps[0]["jm_name"].(string)
+					}
+				}
+			}
 
 			getinfo.Status = 200
 			getinfo.Msg = "请求成功"
