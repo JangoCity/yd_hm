@@ -47,7 +47,8 @@ func (u *FileController) GetFinanceByPage(){
 	//isfinance := u.GetString("isfinance")
 	pageNum,_ := u.GetInt("pagenum")	//页码
 	num,_ := u.GetInt("num")	//每页数量
-	ss := models.GetFile(pageNum,num)
+	uid, _ := u.Ctx.GetSecureCookie(beego.AppConfig.String("secertkey"), "uid")
+	ss := models.GetFile(uid,pageNum,num)
 	u.Data["json"] = ss
 	u.ServeJSON()
 }
@@ -60,8 +61,10 @@ func (u *FileController) CreateFile(){
 	describe := u.GetString("describe")//预留
 	file_date := u.GetString("file_date")//预留
 	isfinance,_ := u.GetInt("isfinance")
+	//用户id
+	uid, _ := u.Ctx.GetSecureCookie(beego.AppConfig.String("secertkey"), "uid")
 	//路径存储到数据库
-	n := models.UploadFile(path,file_date,describe,isfinance)
+	n := models.UploadFile(uid,path,file_date,describe,isfinance)
 	u.Data["json"]=map[string]int{"status":n}
 	u.ServeJSON()
 }

@@ -33,6 +33,20 @@ func InsertJM(jm_name,jm_email,jm_phone,jm_place,jm_content string) int{
 	return 0
 }
 
+//删除加盟信息
+func DeleteJM(id string) int{
+	//判空前端做
+	o := orm.NewOrm()
+	o.Using("default")
+	num,_ := o.QueryTable("jmlist").Filter("id",id).Delete()
+	if num > 0 {
+		return 1
+	}
+	fmt.Println("加盟信息删除失败")
+	return 0
+}
+
+
 func init() {
 	// 需要在init中注册定义的model
 	orm.RegisterModel(new(Jmlist))

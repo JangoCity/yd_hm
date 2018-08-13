@@ -27,3 +27,11 @@ func (u *JmlistController) CreateJmlist(){
 	u.Data["json"]=map[string]int{"status":n}
 	u.ServeJSON()
 }
+
+// 加盟数据删除,返回状态1/0
+func (u *JmlistController) DeleteJmlist(){
+	id := u.GetString("id")
+	n := models.DeleteJM(id)
+	u.Data["json"]=map[string]int{"status":n}
+	u.ServeJSON()
+}

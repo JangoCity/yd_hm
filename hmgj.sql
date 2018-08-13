@@ -11,7 +11,7 @@
  Target Server Version : 50722
  File Encoding         : 65001
 
- Date: 07/08/2018 15:28:18
+ Date: 09/08/2018 17:15:57
 */
 
 SET NAMES utf8mb4;
@@ -67,7 +67,7 @@ CREATE TABLE `file`  (
   `describe` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '描述或文件名称',
   `isfinance` int(11) NULL DEFAULT NULL COMMENT '财务,默认1为财务',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 189 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 190 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of file
@@ -246,6 +246,7 @@ INSERT INTO `file` VALUES (185, '/static/picture/20180807093809.jpg', '', '', NU
 INSERT INTO `file` VALUES (186, '/static/picture/20180807093820.jpg', '', '', NULL);
 INSERT INTO `file` VALUES (187, '/static/picture/20180807093833.jpg', '', '', NULL);
 INSERT INTO `file` VALUES (188, '/static/picture/20180807101003.png', '', '', NULL);
+INSERT INTO `file` VALUES (189, '/static/picture/20180809162912.txt', '2018-08-09', '1.txt', 1);
 
 -- ----------------------------
 -- Table structure for jmlist
@@ -287,7 +288,7 @@ CREATE TABLE `jmuser`  (
   `jm_email` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '',
   `jm_phone` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of jmuser
@@ -297,6 +298,8 @@ INSERT INTO `jmuser` VALUES (11, '宏美时代东城', '2f3ffb8b782e58', '13@163
 INSERT INTO `jmuser` VALUES (12, '胡振辉', '753af282792f5d', '921704585@qq.com', '15869143992');
 INSERT INTO `jmuser` VALUES (13, ' 宏美国际天城店', '2a3ffb8a742d50', '132@qq.com', '13111111111');
 INSERT INTO `jmuser` VALUES (14, '财务', '2c39f9867429', '1231@qq.com', '13111111111');
+INSERT INTO `jmuser` VALUES (15, '宏美国际临平店', '293bfa84772751c86859', '123@123.com', '17788581433');
+INSERT INTO `jmuser` VALUES (16, '测试门店', '2c39f9867429', '23159@qq.com', '15348965246');
 
 -- ----------------------------
 -- Table structure for news
@@ -460,7 +463,7 @@ CREATE TABLE `permission`  (
   `jmuser_id` int(11) NULL DEFAULT NULL,
   `role_id` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of permission
@@ -477,6 +480,8 @@ INSERT INTO `permission` VALUES (9, 11, 3);
 INSERT INTO `permission` VALUES (10, 12, 2);
 INSERT INTO `permission` VALUES (11, 13, 3);
 INSERT INTO `permission` VALUES (12, 14, 4);
+INSERT INTO `permission` VALUES (13, 15, 3);
+INSERT INTO `permission` VALUES (14, 16, 3);
 
 -- ----------------------------
 -- Table structure for permissionlist
@@ -635,11 +640,12 @@ CREATE TABLE `summary`  (
   `outcome` longtext CHARACTER SET utf8 COLLATE utf8_general_ci NULL COMMENT '支出',
   `flow` longtext CHARACTER SET utf8 COLLATE utf8_general_ci NULL COMMENT '流水',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 26 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 28 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of summary
 -- ----------------------------
 INSERT INTO `summary` VALUES (25, '2018-08-06-收入统计表', 14, '[{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"6\":\"\",\"7\":\"\",\"8\":\"\",\"9\":\"\",\"10\":\"\",\"11\":\"\"},{\"1\":\"日期\",\"2\":\"姓名\",\"3\":\"项目\",\"4\":null,\"5\":\"收款方式/金额\",\"6\":null,\"7\":null,\"8\":null,\"9\":\"笔数\",\"10\":\"手续费\",\"11\":\"备注\"},{\"1\":null,\"2\":null,\"3\":\"成交\",\"4\":\"拓客\",\"5\":\"支付宝\",\"6\":\"拉卡拉\",\"7\":\"微信\",\"8\":\"现金\",\"9\":\"\",\"10\":\"\",\"11\":\"\"},{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"6\":\"\",\"7\":\"\",\"8\":\"\",\"9\":\"\",\"10\":\"\",\"11\":\"\"},{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"6\":\"\",\"7\":\"\",\"8\":\"\",\"9\":\"\",\"10\":\"\",\"11\":\"\"},{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"6\":\"\",\"7\":\"\",\"8\":\"\",\"9\":\"\",\"10\":\"\",\"11\":\"\"},{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"6\":\"\",\"7\":\"\",\"8\":\"\",\"9\":\"\",\"10\":\"\",\"11\":\"\"}]', NULL, NULL);
+INSERT INTO `summary` VALUES (27, '2018-08-09-收入统计表', 1, '[{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"6\":\"\",\"7\":\"\",\"8\":\"\",\"9\":\"\",\"10\":\"\",\"11\":\"\"},{\"1\":\"日期\",\"2\":\"姓名\",\"3\":\"项目\",\"4\":null,\"5\":\"收款方式/金额\",\"6\":null,\"7\":null,\"8\":null,\"9\":\"笔数\",\"10\":\"手续费\",\"11\":\"备注\"},{\"1\":null,\"2\":null,\"3\":\"成交\",\"4\":\"拓客\",\"5\":\"支付宝\",\"6\":\"拉卡拉\",\"7\":\"微信\",\"8\":\"现金\",\"9\":\"\",\"10\":\"\",\"11\":\"\"},{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"6\":\"\",\"7\":\"\",\"8\":\"\",\"9\":\"\",\"10\":\"\",\"11\":\"\"},{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"6\":\"\",\"7\":\"\",\"8\":\"\",\"9\":\"\",\"10\":\"\",\"11\":\"\"},{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"6\":\"\",\"7\":\"\",\"8\":\"\",\"9\":\"\",\"10\":\"\",\"11\":\"\"},{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"4\":\"\",\"5\":\"\",\"6\":\"\",\"7\":\"\",\"8\":\"\",\"9\":\"\",\"10\":\"\",\"11\":\"\"}]', NULL, NULL);
 
 SET FOREIGN_KEY_CHECKS = 1;

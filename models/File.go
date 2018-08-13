@@ -13,6 +13,8 @@ type File struct {
 	File_date			string
 	Isfinance			string
 	Describe			string
+	Jmuser_id			string	//
+	Jm_name				string	//用户名
 }
 
 func GetFileById(id int) []File{
@@ -28,31 +30,66 @@ func GetFileById(id int) []File{
 }
 
 //获得所有财务账单数据
-func GetFile(pageNum,num int) interface{} {
+func GetFile(uid string,pageNum,num int) interface{} {
 	var getinfo GetInfo
 	o := orm.NewOrm()
 	o.Using("default")
 	var file []File
 	var maps []orm.Params
-	num2,_  := o.Raw("select count(*) as num from `file` where isfinance=1").Values(&maps)
+	var role_id	string
+	num2, _ := o.Raw("SELECT role_id from `permission` where jmuser_id=?",uid).Values(&maps)
 	if num2 > 0{
-		o.Raw("select *from `file` where isfinance=1 order by id desc limit ?,?",(pageNum-1)*num,num).QueryRows(&file)
-		//data
-		getinfo.Data = file
+		role_id = maps[0]["role_id"].(string)
+	}
+	/*超级管理员或是财务*/
+	if role_id == "1" || role_id == "4" {
+		num2, _ = o.Raw("select count(*) as num from `file` where isfinance=1").Values(&maps)
 		//页码,页记录数,总记录数
 		getinfo.Pager.SumPage = maps[0]["num"].(string)
-		getinfo.Pager.ClientPage = pageNum
-		getinfo.Pager.EveryPage = num
+		if num2 > 0 {
+			num3 ,_ := o.Raw("select *from `file` where isfinance=1 order by id desc limit ?,?", (pageNum-1)*num, num).QueryRows(&file)
+			if num3 > 0{
+				for k,v := range file{
+					num3,_:= o.Raw("select jm_name from `jmuser` where id=?",v.Jmuser_id).Values(&maps)
+					if num3 > 0 {
+						file[k].Jm_name = maps[0]["jm_name"].(string)
+					}
+				}
+			}
+			//data
+			getinfo.Data = file
+			getinfo.Pager.ClientPage = pageNum
+			getinfo.Pager.EveryPage = num
+		}
+	}else {
+		num2, _ = o.Raw("select count(*) as num from `file` where isfinance=1 and jmuser_id=?",uid).Values(&maps)
+		//页码,页记录数,总记录数
+		getinfo.Pager.SumPage = maps[0]["num"].(string)
+		if num2 > 0 {
+			num3 ,_ := o.Raw("select *from `file` where isfinance=1 and jmuser_id=? order by id desc limit ?,?",uid, (pageNum-1)*num, num).QueryRows(&file)
+			if num3 > 0{
+				for k,v := range file{
+					num3,_:= o.Raw("select jm_name from `jmuser` where id=?",v.Jmuser_id).Values(&maps)
+					if num3 > 0 {
+						file[k].Jm_name = maps[0]["jm_name"].(string)
+					}
+				}
+			}
+			//data
+			getinfo.Data = file
+			getinfo.Pager.ClientPage = pageNum
+			getinfo.Pager.EveryPage = num
+		}
 	}
 
 	return getinfo
 }
 //上传文件
-func UploadFile(file_address,file_date,describe string,isfinance int) int{
+func UploadFile(uid,file_address,file_date,describe string,isfinance int) int{
 	//判空前端做
 	o := orm.NewOrm()
 	o.Using("default")
-	_,err := o.Raw("insert `file`(file_address,file_date,`describe`,isfinance) value(?,?,?,?)",file_address,file_date,describe,isfinance).Exec()
+	_,err := o.Raw("insert `file`(jmuser_id,file_address,file_date,`describe`,isfinance) value(?,?,?,?,?)",uid,file_address,file_date,describe,isfinance).Exec()
 	if err == nil {
 		return 1
 	}

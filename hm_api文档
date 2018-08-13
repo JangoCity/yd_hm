@@ -18,6 +18,9 @@ root管理员:账号:admin,密码:admin
 方法：任意
 参数名：jm_name(姓名),jm_email(邮箱),jm_phone(联系方式),jm_place,jm_content(备注)
 返回：status:0/1
+3.删除加盟用户信息
+地址:/jmlist/deletejmlist
+参数:id
 
 ================真正加盟商用户===========================================
 3.0根据id获取加盟用户信息
@@ -129,13 +132,20 @@ v2.5.产品搜索(搜索功能)
 参数:file(文件),describe(文件描述,可省略)
 返回：status:0/1
 19.删除文件(删除在服务器上的文件)
-地址:v/file/deletefile
+地址:v/file/deletefilebyid
 参数：file_id(获得文件中的id)
 返回:status:0/1
 20.更新文件(会删除之前的文件，更新成新的文件)
 地址:v/file/updatefile
-参数:file_id,file(文件),describe(文件描述,可省略)
+参数:file_id,file(文件),describe(文件描述,可省略)，file_date(日期)
 返回：status:0/1
+
+21.1.获得账单数据,分页
+地址:/file/getfinancebypage
+参数:pagenum(页码)，num(数量)
+21.2.新增账单
+地址:/file/createfile
+参数:file_date(日期),isfinance(传入1,表示财务),file(文件),describe(描述)
 
 ======数据丢失,数据库导出========
 ====22. '/permissionlist/getapibyroleid', '返回角色可操作(已拥有)的一组权限'

@@ -5626,3 +5626,154 @@
 
 2018/08/08 17:30:36.570 [D] [server.go:2694] 127.0.0.1 - - [08/Aug/2018 05:30:36] "GET /login/login HTTP/1.1 200 0" 0.001677 http://127.0.0.1:8009/summary/getsummarybypage?clientPage=1&everyPage=2 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 
+2018/08/09 17:13:38.290 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/09 17:15:21.873 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/09 17:17:30.002 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:17:29] "GET /login/login?jmusername=admin&jmuserpassword=admin123 HTTP/1.1 200 0" 0.010819  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:17:30.513 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:17:30] "GET /favicon.ico HTTP/1.1 302 0" 0.000359 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:17:30.537 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:17:30] "GET /login/login HTTP/1.1 200 0" 0.000720 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:17:54.323 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:17:54] "GET /file/getfinancebypage HTTP/1.1 200 0" 0.004531  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:17:54.437 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:17:54] "GET /favicon.ico HTTP/1.1 302 0" 0.000405 http://127.0.0.1:8009/file/getfinancebypage Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:17:54.448 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:17:54] "GET /login/login HTTP/1.1 200 0" 0.001497 http://127.0.0.1:8009/file/getfinancebypage Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:18:17.386 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:18:17] "GET /file/getfinancebypage?pagenum=1&num=10 HTTP/1.1 200 0" 0.009068  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:18:17.599 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:18:17] "GET /favicon.ico HTTP/1.1 302 0" 0.000400 http://127.0.0.1:8009/file/getfinancebypage?pagenum=1&num=10 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:18:17.606 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:18:17] "GET /login/login HTTP/1.1 200 0" 0.000842 http://127.0.0.1:8009/file/getfinancebypage?pagenum=1&num=10 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:18:35.415 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:18:35] "GET /favicon.ico HTTP/1.1 302 0" 0.000441 http://127.0.0.1:8009/file/getfinancebypage Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:18:35.424 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:18:35] "GET /login/login HTTP/1.1 200 0" 0.000661 http://127.0.0.1:8009/file/getfinancebypage Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:18:35.959 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:18:35] "GET /favicon.ico HTTP/1.1 302 0" 0.000411 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:18:35.973 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:18:35] "GET /login/login HTTP/1.1 200 0" 0.001031 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:18:48.585 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:18:48] "GET /login/login?jmusername=%E6%B5%8B%E8%AF%95%E9%97%A8%E5%BA%97&jmuserpassword=123456 HTTP/1.1 200 0" 0.004280  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:18:48.775 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:18:48] "GET /favicon.ico HTTP/1.1 302 0" 0.000308 http://127.0.0.1:8009/login/login?jmusername=%E6%B5%8B%E8%AF%95%E9%97%A8%E5%BA%97&jmuserpassword=123456 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:18:48.795 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:18:48] "GET /login/login HTTP/1.1 200 0" 0.000784 http://127.0.0.1:8009/login/login?jmusername=%E6%B5%8B%E8%AF%95%E9%97%A8%E5%BA%97&jmuserpassword=123456 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:18:53.370 [C] [asm_amd64.s:573] the request url is  /file/getfinancebypage
+2018/08/09 17:18:53.370 [C] [asm_amd64.s:573] Handler crashed with error interface conversion: interface {} is nil, not string
+2018/08/09 17:18:53.370 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/09 17:18:53.370 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/09 17:18:53.370 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/iface.go:252
+2018/08/09 17:18:53.370 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/models/File.go:67
+2018/08/09 17:18:53.371 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:51
+2018/08/09 17:18:53.371 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/09 17:18:53.371 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/09 17:18:53.371 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/09 17:18:53.371 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/09 17:18:53.371 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/09 17:18:53.371 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/09 17:18:53.371 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/09 17:18:53.497 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:18:53] "GET /favicon.ico HTTP/1.1 302 0" 0.000242 http://127.0.0.1:8009/file/getfinancebypage?pagenum=1&num=10 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:18:53.503 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:18:53] "GET /login/login HTTP/1.1 200 0" 0.000854 http://127.0.0.1:8009/file/getfinancebypage?pagenum=1&num=10 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] the request url is  /file/getfinancebypage
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] Handler crashed with error interface conversion: interface {} is nil, not string
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/panic.go:502
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/iface.go:252
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/models/File.go:67
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] /home/lu/gowork/src/yd_hm/controllers/FileController.go:51
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:573
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:447
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/reflect/value.go:308
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] /home/lu/gowork/src/github.com/astaxie/beego/router.go:847
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:2694
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/net/http/server.go:1830
+2018/08/09 17:22:07.220 [C] [asm_amd64.s:573] /usr/lib/go-1.10/src/runtime/asm_amd64.s:2361
+2018/08/09 17:22:07.414 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:22:07] "GET /favicon.ico HTTP/1.1 302 0" 0.000334 http://127.0.0.1:8009/file/getfinancebypage?pagenum=1&num=10 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:22:07.441 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:22:07] "GET /login/login HTTP/1.1 200 0" 0.000859 http://127.0.0.1:8009/file/getfinancebypage?pagenum=1&num=10 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:24:05.953 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/09 17:24:11.172 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:24:11] "GET /file/getfinancebypage?pagenum=1&num=10 HTTP/1.1 200 0" 0.008134  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:24:11.377 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:24:11] "GET /favicon.ico HTTP/1.1 302 0" 0.000325 http://127.0.0.1:8009/file/getfinancebypage?pagenum=1&num=10 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/09 17:24:11.386 [D] [server.go:2694] 127.0.0.1 - - [09/Aug/2018 05:24:11] "GET /login/login HTTP/1.1 200 0" 0.000708 http://127.0.0.1:8009/file/getfinancebypage?pagenum=1&num=10 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:25:11.867 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/13 09:25:26.299 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:25:26] "GET /getJm HTTP/1.1 404 0" 0.000628  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:25:26.613 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:25:26] "GET /favicon.ico HTTP/1.1 302 0" 0.000324 http://127.0.0.1:8009/getJm Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:25:26.621 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:25:26] "GET /login/login HTTP/1.1 200 0" 0.000763 http://127.0.0.1:8009/getJm Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:30:38.776 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:30:38] "GET /login/login?jmusername=admin&jmuserpassword=123 HTTP/1.1 200 0" 0.001097  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:30:38.873 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:30:38] "GET /favicon.ico HTTP/1.1 302 0" 0.000558 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:30:38.889 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:30:38] "GET /login/login HTTP/1.1 200 0" 0.000813 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:30:47.267 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:30:47] "GET /login/login?jmusername=admin&jmuserpassword=admin123 HTTP/1.1 200 0" 0.010032  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:30:48.082 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:30:48] "GET /favicon.ico HTTP/1.1 302 0" 0.000333 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:30:48.100 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:30:48] "GET /login/login HTTP/1.1 200 0" 0.000875 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:31:25.801 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:31:25] "GET /jmlist/deletejmlist?id=68 HTTP/1.1 302 0" 0.000389  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:31:25.811 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:31:25] "GET /login/login HTTP/1.1 200 0" 0.000829  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:31:25.916 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:31:25] "GET /favicon.ico HTTP/1.1 302 0" 0.000404 http://127.0.0.1:8009/login/login Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:31:25.926 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:31:25] "GET /login/login HTTP/1.1 200 0" 0.000594 http://127.0.0.1:8009/login/login Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:33:40.724 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:33:40] "GET /favicon.ico HTTP/1.1 302 0" 0.000398 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:33:40.741 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:33:40] "GET /login/login HTTP/1.1 200 0" 0.000904 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:03.701 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:03] "GET /favicon.ico HTTP/1.1 302 0" 0.000567 http://127.0.0.1:8009/login/login Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:03.714 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:03] "GET /login/login HTTP/1.1 200 0" 0.000789 http://127.0.0.1:8009/login/login Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:04.436 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:04] "GET /favicon.ico HTTP/1.1 302 0" 0.000396 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:04.446 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:04] "GET /login/login HTTP/1.1 200 0" 0.000872 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:06.032 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:06] "GET /login/login?jmusername=admin&jmuserpassword=admin123 HTTP/1.1 200 0" 0.003222  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:06.129 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:06] "GET /favicon.ico HTTP/1.1 302 0" 0.000441 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:06.143 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:06] "GET /login/login HTTP/1.1 200 0" 0.000735 http://127.0.0.1:8009/login/login?jmusername=admin&jmuserpassword=admin123 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:21.315 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:21] "GET /jmlist/deletejmlist HTTP/1.1 200 0" 0.006106  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:21.512 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:21] "GET /favicon.ico HTTP/1.1 302 0" 0.000401 http://127.0.0.1:8009/jmlist/deletejmlist Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:21.547 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:21] "GET /login/login HTTP/1.1 200 0" 0.000833 http://127.0.0.1:8009/jmlist/deletejmlist Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:43.461 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:43] "GET /jmlist/deletejmlist?id=68 HTTP/1.1 200 0" 0.011410  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:52.596 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:52] "GET /jmlist/deletejmlist?id=69 HTTP/1.1 200 0" 0.007434  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:57.861 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:57] "GET /jmlist/deletejmlist?id=69 HTTP/1.1 200 0" 0.001839  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:57.963 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:57] "GET /favicon.ico HTTP/1.1 302 0" 0.000383 http://127.0.0.1:8009/jmlist/deletejmlist?id=69 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:36:57.981 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:36:57] "GET /login/login HTTP/1.1 200 0" 0.000701 http://127.0.0.1:8009/jmlist/deletejmlist?id=69 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:37:34.923 [I] [asm_amd64.s:2361] http server Running on http://:8009
+2018/08/13 09:37:36.822 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:37:36] "GET /jmlist/deletejmlist?id=69 HTTP/1.1 200 0" 0.006336  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:37:37.029 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:37:37] "GET /favicon.ico HTTP/1.1 302 0" 0.000469 http://127.0.0.1:8009/jmlist/deletejmlist?id=69 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:37:37.038 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:37:37] "GET /login/login HTTP/1.1 200 0" 0.001137 http://127.0.0.1:8009/jmlist/deletejmlist?id=69 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:37:42.955 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:37:42] "GET /jmlist/deletejmlist?id=70 HTTP/1.1 200 0" 0.010449  Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:37:43.063 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:37:43] "GET /favicon.ico HTTP/1.1 302 0" 0.000423 http://127.0.0.1:8009/jmlist/deletejmlist?id=70 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
+2018/08/13 09:37:43.071 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 09:37:43] "GET /login/login HTTP/1.1 200 0" 0.000747 http://127.0.0.1:8009/jmlist/deletejmlist?id=70 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+
